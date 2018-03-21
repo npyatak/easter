@@ -428,6 +428,10 @@
         }
         .bottom .top__part {
             width: 100%;
+            padding: 0 10px;
+        }
+        .bottom .top__part .title {
+            font-size: 30px;
         }
     }
 </style>
@@ -542,20 +546,6 @@
         <div class="cards-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <div class="text-tilted"></div>
-                            <img src="/images/recepie-page/cards/card-1.jpg" alt="Мини-куличи с апельсиновыми цукатами">
-                            <div class="text">
-                                <h1 class="title">
-                                    Мини-куличи с апельсиновыми цукатами
-                                </h1>
-                                <a href="https://www.edimdoma.ru/retsepty/97948-mini-kulichi-s-apelsinovymi-tsukatami" class="link">
-                                    Читать
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
                             <div class="text-tilted"></div>
@@ -845,6 +835,20 @@
                                     Кулич плетёный
                                 </h1>
                                 <a href="http://academy.oetker.ru/recipes/3381/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-1.jpg" alt="Мини-куличи с апельсиновыми цукатами">
+                            <div class="text">
+                                <h1 class="title">
+                                    Мини-куличи с апельсиновыми цукатами
+                                </h1>
+                                <a href="https://www.edimdoma.ru/retsepty/97948-mini-kulichi-s-apelsinovymi-tsukatami" class="link">
                                     Читать
                                 </a>
                             </div>
