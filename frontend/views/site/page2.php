@@ -1,3 +1,4 @@
+<link href="/css/bootstrap.css" rel="stylesheet">
 <style>
     .rcp-page {
         display: block;
@@ -107,7 +108,7 @@
     .middle__text .text-number:last-child {
         margin-bottom: 100px;
     }
-    /* competition-block */
+/* competition-block */
     .competition {
         height: 700px;
         background: #ccdc95;
@@ -142,8 +143,8 @@
         background: #ccdc95;
         padding: 0 100px;
     }
-    .competition__wrapper .link {
-        padding: 0 0 3px 0;
+    .link {
+        padding: 0 0 1px 0;
         border-bottom: 1px solid #337ab7;
     }
     .competition__text {
@@ -201,6 +202,80 @@
     }
     .special-link {
         margin-right: 60px;
+    }
+/* bottom-block */
+    .rcp-page .bottom {
+        height: auto;
+        background: url(../images/recepie-page/bg-1.png) no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        padding: 50px 0;
+    }
+    .bottom .top__part {
+        width: 940px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        text-align: -webkit-center;
+        margin-bottom: 50px;
+    }
+    .bottom .top__part .cupcake-icon {
+        width: 55px;
+        height: 47px;
+    }
+    .bottom .top__part .title {
+        text-align: -webkit-center;
+        font-size: 48px;
+        font-family: 'PT-Serif-BoldItalic';
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .card {
+        height: auto;
+        background: #fff;
+        margin-bottom: 60px;
+        display: block;
+        position: relative;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card .text {
+        padding: 15px;
+        display: block;
+        height: 140px;
+        z-index: 2;
+        background: #fff;
+    }
+    .text-tilted {
+        height: 10px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.59);
+        width: calc(100% - 3px);
+        bottom: -5px;
+        left: 3px;
+        transform: rotate(-1deg);
+        z-index: 0;
+        border-bottom: 1px solid #ccc3c3;
+    }
+    .card a {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+    .card .text .title {
+        text-align: left;
+        text-align: -webkit-left;
+        color: #000;
+        font-size: 21px;
+        font-family: 'PT-Serif-Regular';
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-top: 0;
     }
     @media screen and (min-width: 1200px) {
         .hide-desktop {
@@ -439,6 +514,54 @@
                 <a href="#" class="link">
                     Все участники
                 </a>
+            </div>
+        </div>
+    </div>
+    <!-- here comes slider -->
+
+    <!-- /here comes slider -->
+    <div class="bottom">
+        <div class="top__part">
+            <img class="cupcake-icon" src="/images/icons/cupcake.png" alt="">
+            <h1 class="title">
+                Другие рецепты куличей
+            </h1>
+            <a href="#" class="link">
+                Смортеть все
+            </a>
+        </div>
+        <div class="cards-wrapper">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/temp.png" alt="">
+                            <div class="text">
+                                <h1 class="title">
+                                    Сладкие пасхальные яйца
+                                </h1>
+                                <a href="" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/temp.png" alt="">
+                            <div class="text">
+                                <h1 class="title">
+                                    Сладкие пасхальные яйца
+                                </h1>
+                                <a href="" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
