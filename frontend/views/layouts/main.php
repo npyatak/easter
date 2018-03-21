@@ -26,6 +26,8 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+    </div>
+    <div id="content">
         <?= $content ?>
     </div>
 </div>

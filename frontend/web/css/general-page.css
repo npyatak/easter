@@ -1,0 +1,15 @@
+.g-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.g-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.general-page .first-block {
+    height: 840px;
+    background: url('../images/general-page/general-page.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
