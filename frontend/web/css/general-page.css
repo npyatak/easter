@@ -37,6 +37,10 @@ a.text-white:active {
     color: #fff;
     text-decoration: none;
 }
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
 
 .g-container {
     width: 1300px;
@@ -183,13 +187,14 @@ a.text-white:active {
     margin-right: 20px;
 }
 .second-block .bottom {
+    position: relative;
     padding: 70px 0 50px;
     background-color: #C7DD92;
     text-align: center;
 }
 .second-block .bottom h2 {
     position: relative;
-    margin: 0;
+    margin: 0 0 70px;
     font: 48px 'PT-Serif-BoldItalic', serif;
     line-height: 48px;
     color: #fff;
@@ -206,8 +211,8 @@ a.text-white:active {
     display: block;
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
+    left: 100px;
+    right: 100px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -216,13 +221,52 @@ a.text-white:active {
     height: 1px;
     background-color: #AABD7C;
 }
+.second-block .bottom h3 {
+    max-width: 660px;
+    margin: 0 auto 60px auto;
+    font: 38px 'PT-Serif-Bold', serif;
+    line-height: 60px;
+    color: #000;
+}
+.second-block .bottom .hash-tag {
+    margin: 40px 0;
+    font: 38px 'PT-Serif-Bold', serif;
+    color: #000;
+}
 .second-block .bottom .actions {
+    margin-top: 30px;
     padding-bottom: 70px;
     border-bottom: 1px solid #AABD7C;
     text-align: center;
 }
 .second-block .bottom .actions a {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 30px;
     text-decoration: underline;
+}
+.second-block .bottom p {
+    max-width: 480px;
+    margin: 0 auto;
+}
+.second-block .bottom .left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: calc(100% + 50px);
+    background: url('../images/general-page/left.png') no-repeat bottom center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    z-index: 1;
+}
+.second-block .bottom .right {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 450px;
+    height: calc(100% + 50px);
+    background: url('../images/general-page/right.png') no-repeat bottom center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    z-index: 1;
 }

@@ -48,6 +48,8 @@
             </div>
         </div>
         <div class="bottom">
+            <div class="left"></div>
+            <div class="right"></div>
             <div class="g-container">
                 <h2><span>Конкурс</span></h2>
                 <h3>Академия Dr. Oetker объявляет конкурс на самый красивый пасхальный кулич.</h3>
