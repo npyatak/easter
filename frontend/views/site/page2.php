@@ -240,6 +240,7 @@
         margin-bottom: 60px;
         display: block;
         position: relative;
+        /* max-height: 411px; */
     }
     .card img {
         width: 100%;
@@ -345,6 +346,9 @@
         .middle__text .text-number:last-child {
             margin-bottom: 20px;
         }
+        .bottom .top__part {
+            width: 100%;
+        }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
         .rcp-page .header {
@@ -421,6 +425,9 @@
         }
         .special-link {
             margin-right: 30px;
+        }
+        .bottom .top__part {
+            width: 100%;
         }
     }
 </style>
@@ -518,7 +525,9 @@
         </div>
     </div>
     <!-- here comes slider -->
-
+    <div style="bacground: #fff; height: 200px; width: 200px;" class="white-slider">
+    
+    </div>
     <!-- /here comes slider -->
     <div class="bottom">
         <div class="top__part">
@@ -531,17 +540,17 @@
             </a>
         </div>
         <div class="cards-wrapper">
-            <div class="row">
-                <div class="container">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
                             <div class="text-tilted"></div>
-                            <img src="/images/recepie-page/temp.png" alt="">
+                            <img src="/images/recepie-page/cards/card-1.jpg" alt="Мини-куличи с апельсиновыми цукатами">
                             <div class="text">
                                 <h1 class="title">
-                                    Сладкие пасхальные яйца
+                                    Мини-куличи с апельсиновыми цукатами
                                 </h1>
-                                <a href="" class="link">
+                                <a href="https://www.edimdoma.ru/retsepty/97948-mini-kulichi-s-apelsinovymi-tsukatami" class="link">
                                     Читать
                                 </a>
                             </div>
@@ -550,12 +559,292 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
                             <div class="text-tilted"></div>
-                            <img src="/images/recepie-page/temp.png" alt="">
+                            <img src="/images/recepie-page/cards/card-2.jpg" alt="Бездрожжевой кулич">
                             <div class="text">
                                 <h1 class="title">
-                                    Сладкие пасхальные яйца
+                                    Бездрожжевой кулич
                                 </h1>
-                                <a href="" class="link">
+                                <a href="http://academy.oetker.ru/recipes/4601/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-3.jpg" alt="Дрожжевой кулич с меренгой">
+                            <div class="text">
+                                <h1 class="title">
+                                    Дрожжевой кулич с меренгой
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4600/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-4.jpg" alt="Пасхальный кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Пасхальный кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4597/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-5.jpg" alt="Творожный кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Творожный кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4596/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-6.jpg" alt="Итальянский кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Итальянский кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4568/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-7.jpg" alt="Маковый кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Маковый кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4561/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-8.jpg" alt="Кулич на Пасху (на сливках)">
+                            <div class="text">
+                                <h1 class="title">
+                                    Кулич на Пасху (на сливках)
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4553/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-9.jpg" alt="Кулич с цукатами и орешками">
+                            <div class="text">
+                                <h1 class="title">
+                                    Кулич с цукатами и орешками
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4541/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-10.jpg" alt="Бездрожжевой кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Бездрожжевой кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4543/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-11.jpg" alt="Кулич-бриошь">
+                            <div class="text">
+                                <h1 class="title">
+                                    Кулич-бриошь
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4552/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-12.jpg" alt="Быстрые пасхальные куличи">
+                            <div class="text">
+                                <h1 class="title">
+                                    Быстрые пасхальные куличи
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4517/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-13.jpg" alt="Творожный кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Творожный кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4530/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-14.jpg" alt="Творожный кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Творожный кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4501/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-15.jpg" alt="Александрийский кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Александрийский кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4476/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-16.jpg" alt="Мини-куличики">
+                            <div class="text">
+                                <h1 class="title">
+                                    Мини-куличики
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3978/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-17.jpg" alt="Куличи 'Нежные'">
+                            <div class="text">
+                                <h1 class="title">
+                                    Куличи "Нежные"
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/4465/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-18.jpg" alt="Апельсиновый кулич с шоколадом">
+                            <div class="text">
+                                <h1 class="title">
+                                    Апельсиновый кулич с шоколадом
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3953/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-19.jpg" alt="Кулич для малышки">
+                            <div class="text">
+                                <h1 class="title">
+                                    Кулич для малышки
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3910/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-20.jpg" alt="Бабушкин кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Бабушкин кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3428/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-21.jpg" alt="Ванильный кулич">
+                            <div class="text">
+                                <h1 class="title">
+                                    Ванильный кулич
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3402/" class="link">
+                                    Читать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="text-tilted"></div>
+                            <img src="/images/recepie-page/cards/card-22.jpg" alt="Кулич плетёный">
+                            <div class="text">
+                                <h1 class="title">
+                                    Кулич плетёный
+                                </h1>
+                                <a href="http://academy.oetker.ru/recipes/3381/" class="link">
                                     Читать
                                 </a>
                             </div>
