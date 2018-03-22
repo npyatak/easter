@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     $('.go-to-second-screen').click(function(){
-        $('html, body').animate({scrollTop: $('.second-block').offset().top}, 300);
+        $('html, body').animate({scrollTop: $('.second-block').offset().top}, 400);
     });
 
 

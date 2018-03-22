@@ -21,7 +21,9 @@
                 </div>
                 <div class="contest-items clearfix">
                     <div class="contest-item">
-                        <a href="" class="image" style="background-image:url('/frontend/web/images/general-page/pasha-1.jpg')"></a>
+                        <a href="" class="image">
+                            <img src="/frontend/web/images/general-page/pasha-1.jpg" alt="Кулич творожный с изюминкой">
+                        </a>
                         <div class="text">
                             <h3><a href="">Кулич творожный с изюминкой</a></h3>
                             <p>Для теста:</p>
@@ -33,7 +35,9 @@
                         </div>
                     </div>
                     <div class="contest-item">
-                        <a href="" class="image" style="background-image:url('/frontend/web/images/general-page/pasha-2.jpg')"></a>
+                        <a href="" class="image">
+                            <img src="/frontend/web/images/general-page/pasha-2.jpg" alt="Кулич творожный с изюминкой">
+                        </a>
                         <div class="text">
                             <h3><a href="">Кулич творожный с изюминкой</a></h3>
                             <p>Для теста:</p>
@@ -128,7 +132,9 @@
                 </div>
                 <div class="contest-items clearfix">
                     <div class="contest-item">
-                        <a href="" class="image" style="background-image:url('/frontend/web/images/general-page/pasha-3.jpg')"></a>
+                        <a href="" class="image">
+                            <img src="/frontend/web/images/general-page/pasha-3.jpg" alt="Сладкие пасхальные яица">
+                        </a>
                         <div class="text">
                             <h3><a href="">Сладкие пасхальные яица</a></h3>
                             <p>Для теста:</p>
@@ -140,7 +146,9 @@
                         </div>
                     </div>
                     <div class="contest-item">
-                        <a href="" class="image" style="background-image:url('/frontend/web/images/general-page/pasha-4.jpg')"></a>
+                        <a href="" class="image">
+                            <img src="/frontend/web/images/general-page/pasha-4.jpg" alt="Ромовая баба">
+                        </a>
                         <div class="text">
                             <h3><a href="">Ромовая баба</a></h3>
                             <p>Для теста:</p>

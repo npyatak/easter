@@ -65,9 +65,10 @@ body {
     padding-top: 220px;
 }
 .general-page .first-block h1 {
-    max-width: 310px;
+    max-width: 360px;
     margin: 0 auto 100px;
-    font: 71px 'PT-Serif-Bold', serif;
+    font: 71px 'PT Serif', serif;
+    font-weight: bold;
     line-height: 65px;
     color: #ec1c24;
     text-align: center;
@@ -75,7 +76,7 @@ body {
 .general-page .first-block h2 {
     max-width: 450px;
     margin: 0 auto 40px;
-    font: 48px 'Lobster', serif;
+    font: 48px 'Lobster', cursive;
     line-height: 45px;
     color: #000;
     text-align: center;
@@ -106,7 +107,9 @@ body {
 }
 .general-page .second-block h2 {
     margin-bottom: 30px;
-    font: 48px 'PT-Serif-BoldItalic', serif;
+    font: 48px 'PT-Serif', serif;
+    font-weight: 700;
+    font-style: italic;
     line-height: 45px;
     text-align: center;
     color: #fff;
@@ -119,7 +122,9 @@ body {
 }
 .general-page .fourth-block h2 {
     margin-bottom: 30px;
-    font: 48px 'PT-Serif-BoldItalic', serif;
+    font: 48px 'PT Serif', serif;
+    font-weight: 700;
+    font-style: italic;
     line-height: 45px;
     text-align: center;
     color: #fff;
@@ -188,12 +193,11 @@ body {
 .contest-item .image {
     position: relative;
     display: block;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
     z-index: 2;
+}
+.contest-item .image img {
+    display: block;
+    width: 100%;
 }
 .contest-item .text {
     position: relative;
@@ -203,6 +207,7 @@ body {
 .contest-item .text h3 {
     margin-top: 0;
     margin-bottom: 30px;
+    font-family: 'PT Serif Caption', serif;
     text-align: center;
 }
 .contest-item .text h3 a {
@@ -226,8 +231,10 @@ body {
 }
 .second-block .bottom h2 {
     position: relative;
-    margin: 0 0 70px;
-    font: 48px 'PT-Serif-BoldItalic', serif;
+    margin: 0 0 40px;
+    font: 48px 'PT Serif', serif;
+    font-weight: 700;
+    font-style: italic;
     line-height: 48px;
     color: #fff;
 }
@@ -255,14 +262,15 @@ body {
 }
 .second-block .bottom h3 {
     max-width: 660px;
-    margin: 0 auto 60px auto;
-    font: 38px 'PT-Serif-Bold', serif;
+    margin: 0 auto 50px auto;
+    font: 35px 'PT Serif', serif;
     line-height: 60px;
     color: #000;
 }
 .second-block .bottom .hash-tag {
     margin: 40px 0;
-    font: 38px 'PT-Serif-Bold', serif;
+    font: 38px 'PT Serif', serif;
+    font-weight: 700;
     color: #000;
 }
 .second-block .bottom .actions {
@@ -319,7 +327,7 @@ body {
 }
 .flex-box .left h4 {
     margin: 0;
-    font: 28px 'PT-Serif-Bold', serif;
+    font: 28px 'PT Serif Caption', serif;
     color: #000;
     text-align: center;
 }
@@ -351,4 +359,130 @@ body {
     color: #6a98bc;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width: 1360px){
+    .g-container {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .second-block .bottom .left,
+    .second-block .bottom .right {
+        display: none;
+    }
+    .second-block .bottom h2::before {
+        left: 0;
+        right: 0;
+    }
+}
+@media (max-width: 1100px){
+    .contest-item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .contest-item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .decorate .flex-box {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .decorate .flex-box>div {
+        width: 100%;
+    }
+    .decorate .flex-box .right {
+        position: relative;
+    }
+    .decorate .flex-box .right::before {
+        content: '';
+        float: left;
+        padding-top: 50%;
+    }
+    .custom_paging {
+        right: 0;
+        padding: 0 30px;
+    }
+}
+@media (max-width: 992px){
+    .general-page .first-block {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .general-page .first-block .inner {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 767px){
+    .general-page .first-block h1 {
+        margin-bottom: 30px;
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .general-page .first-block h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .general-page .second-block h2,
+    .second-block .bottom h2,
+    .general-page .fourth-block h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .g-container {
+        padding: 0 20px;
+    }
+    .contest-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .second-block .bottom h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .flex-box .left {
+        padding: 40px 30px 100px;
+    }
+    .flex-box .left .text {
+        padding: 30px 0;
+    }
+}
+@media (max-width: 440px){
+    .general-page .first-block h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .general-page .first-block h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .general-page .first-block p {
+        margin-bottom: 35px;
+    }
+    .general-page .second-block h2,
+    .general-page .fourth-block h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .contest-item .actions {
+        text-align: center;
+    }
+    .contest-item .actions .p-btn {
+        margin-right: 0;
+    }
+    .contest-item .actions .simple-link {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .second-block .bottom .hash-tag {
+        margin: 30px 0;
+        font-size: 30px;
+    }
+    .second-block .bottom h3 {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .second-block .bottom h2 span {
+        padding: 0 40px;
+    }
 }
