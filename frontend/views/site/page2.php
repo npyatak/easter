@@ -469,10 +469,6 @@
         }
     }
 </style>
-<link rel="stylesheet" href="/css/slider-styles.css">
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-<link rel="stylesheet" href="/css/slider-styles.css">
 <div class="rcp-page">
     <div class="header">
         <div class="header__text">
@@ -923,36 +919,4 @@
             </div>
         </div>
     </div>
-<script>
-    $(document).ready(function() {
-        $('.main-slider-nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            nextArrow: '<div class="slider-nav-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
-            prevArrow: '<div class="slider-nav-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: true,
-                        dots: true
-                    }
-                }
-            ]
-        });
-    });
-</script>
 </div>
