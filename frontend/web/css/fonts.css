@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster/Lobster.ttf') format('true-type');
+}
+@font-face {
+    font-family: 'AriaMT';
+    src: url('fonts/AriaMT/ARIALMT.ttf') format('true-type');
+}
+@font-face {
+    font-family: 'PT-Serif-Regular';
+    src: url('fonts/PT-Serif/PT_Serif-Web-Regular.ttf') format('true-type');
+}
+@font-face {
+    font-family: 'PT-Serif-Bold';
+    src: url('fonts/PT-Serif/PT_Serif-Web-Bold.ttf') format('true-type');
+}
+@font-face {
+    font-family: 'PT-Serif-BoldItalic';
+    src: url('fonts/PT-Serif/PT_Serif-Web-BoldItalic.ttf') format('true-type');
+}
