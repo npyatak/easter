@@ -15,10 +15,14 @@ class AppAsset extends AssetBundle
         'css/fonts.css',
         'css/font-awesome.min.css',
         'css/site.css',
+        'css/slick.css',
+        'css/slick-theme.css',
+        'css/slider-styles.css',
         'css/general-page.css',
     ];
     public $js = [
         'js/jquery-3.3.1.min.js',
+        'js/slick.min.js',
         'js/general-page.js'
     ];
     public $depends = [

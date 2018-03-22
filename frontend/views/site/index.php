@@ -63,4 +63,59 @@
             </div>
         </div>
     </div>
+    <!-- here comes slider -->
+    <div class="main-slider-wrapper">
+        <div class="title">
+            Dr. Oetker рекомендует: <br/>
+            Лучшие продукты к Пасхе
+        </div>
+        <div class="main-slider-nav main-slider">
+            <div class="main-slider__card">
+                <img src="/images/main-slider/temp.png" alt="">
+                <button>
+                    Декор
+                </button>
+                <p>
+                    Глазурь со вкусом лимона 1
+                </p>
+            </div>
+            <div class="main-slider__card">
+                <img src="/images/main-slider/temp.png" alt="">
+                <button>
+                    Декор
+                </button>
+                <p>
+                    Глазурь со вкусом лимона 1
+                </p>
+            </div>
+            <div class="main-slider__card">
+                <img src="/images/main-slider/temp.png" alt="">
+                <button>
+                    Декор
+                </button>
+                <p>
+                    Глазурь со вкусом лимона 2
+                </p>
+            </div>
+            <div class="main-slider__card">
+                <img src="/images/main-slider/temp.png" alt="">
+                <button>
+                    Декор
+                </button>
+                <p>
+                    Глазурь со вкусом лимона 3
+                </p>
+            </div>
+            <div class="main-slider__card">
+                <img src="/images/main-slider/temp.png" alt="">
+                <button>
+                    Декор
+                </button>
+                <p>
+                    Глазурь со вкусом лимона 3
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /here comes slider -->
 </div>
