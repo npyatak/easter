@@ -23,6 +23,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/jquery-3.3.1.min.js',
         'js/slick.min.js',
+        'js/main.js',
         'js/general-page.js'
     ];
     public $depends = [
