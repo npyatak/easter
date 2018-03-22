@@ -42,10 +42,13 @@ a.text-white:active {
     overflow: hidden;
 }
 
+body {
+    font: 16px Arial, sans-serif;
+}
+
 .g-container {
     width: 1300px;
     margin: 0 auto;
-    font: 16px 'AriaMT', sans-serif;
 }
 .g-container::after {
     content: '';
@@ -82,7 +85,7 @@ a.text-white:active {
     margin: 0 auto 60px;
     text-align: center;
 }
-.general-page .first-block a {
+.general-page .first-block .go-to-second-screen {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -93,6 +96,7 @@ a.text-white:active {
     border-radius: 50%;
     border: 1px solid #95C5E9;
     color: #95C5E9;
+    cursor: pointer;
 }
 .general-page .second-block .top {
     padding: 60px 0 100px;
@@ -106,6 +110,34 @@ a.text-white:active {
     line-height: 45px;
     text-align: center;
     color: #fff;
+}
+.general-page .fourth-block {
+    padding: 60px 0 80px;
+    background: url('../images/general-page/general-page-2.png') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.general-page .fourth-block h2 {
+    margin-bottom: 30px;
+    font: 48px 'PT-Serif-BoldItalic', serif;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.general-page .fourth-block .top {
+    padding-bottom: 80px;
+}
+.general-page .fourth-block .bottom .g-container {
+    padding-top: 60px;
+    border-top: 1px solid #5F9E23;
+}
+.fourth-block .bottom .decorate {
+    margin-bottom: 40px;
+}
+.decorate .item {
+    -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 16px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.2);
 }
 .simple-link {
     text-decoration: underline;
@@ -269,4 +301,54 @@ a.text-white:active {
     -webkit-background-size: contain;
     background-size: contain;
     z-index: 1;
+}
+.flex-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.flex-box>div {
+    width: 50%;
+}
+.flex-box .left {
+    padding: 60px 50px 130px;
+    background-color: #fff;
+}
+.flex-box .left h4 {
+    margin: 0;
+    font: 28px 'PT-Serif-Bold', serif;
+    color: #000;
+    text-align: center;
+}
+.flex-box .left .text {
+    padding: 50px 0;
+}
+.flex-box .left p {
+    margin-bottom: 0;
+    line-height: 28px;
+}
+.flex-box .right {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.custom_paging {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 50%;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+.custom_paging li {
+    display: inline-block;
+    margin: 0 10px;
+    color: #6a98bc;
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -18,7 +18,7 @@ class AppAsset extends AssetBundle
         'css/slick.css',
         'css/slick-theme.css',
         'css/slider-styles.css',
-        'css/general-page.css',
+        'css/main.css',
     ];
     public $js = [
         'js/jquery-3.3.1.min.js',

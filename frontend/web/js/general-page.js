@@ -1,9 +1,19 @@
 $(document).ready(function () {
     
-    $(this)
-        .on('.go-to-second-screen', function (e) {
-        e.preventDefault();
-        $('.second-block').animate({scrollTop: 100}, 300);
+    $('.go-to-second-screen').click(function(){
+        $('html, body').animate({scrollTop: $('.second-block').offset().top}, 300);
     });
-    
+
+
+    $('.decorate').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        dotsClass: 'custom_paging',
+        customPaging: function (slider, i) {
+            return (i + 1);
+        }
+    });
+
 });
