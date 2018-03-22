@@ -1,8 +1,6 @@
-<link href="/css/bootstrap.css" rel="stylesheet">
-<link href="/css/slick.css" rel="stylesheet">
-<link href="/css/slick-theme.css" rel="stylesheet">
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="/css/slider-styles.css">
 <style>
     .rcp-page {
         display: block;
@@ -65,7 +63,7 @@
         position: relative;
         text-align: center;
         text-align: -webkit-center;
-        padding: 100px 0;
+        padding: 50px 0;
     }
     .rcp-page .middle .middle__text {
         position: relative;
@@ -73,6 +71,9 @@
         text-align: center;
         text-align: -webkit-center;
         margin: 0 auto;
+    }
+    .decoration-page .middle__text {
+        padding: 20px;
     }
     .middle__text .title {
         text-align: center;
@@ -244,19 +245,54 @@
         margin-bottom: 60px;
         display: block;
         position: relative;
-        /* max-height: 411px; */
+    }
+    .card::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 3px;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 0;
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+        -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
+        -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
+    }
+    .card::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 1;
+        -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
+        -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.17);
     }
     .card img {
         width: 100%;
+        position: relative;
+        z-index: 2;
     }
     .card .text {
         padding: 15px;
         display: block;
         height: 140px;
+        position: relative;
         z-index: 2;
         background: #fff;
     }
-    .text-tilted {
+    /* .text-tilted {
         height: 10px;
         position: absolute;
         background: rgba(255, 255, 255, 0.59);
@@ -266,7 +302,7 @@
         transform: rotate(-1deg);
         z-index: 0;
         border-bottom: 1px solid #ccc3c3;
-    }
+    } */
     .card a {
         position: absolute;
         bottom: 15px;
@@ -282,6 +318,7 @@
         margin-bottom: 30px;
         margin-top: 0;
     }
+/* @media */    
     @media screen and (min-width: 1200px) {
         .hide-desktop {
             display: none;
@@ -315,6 +352,7 @@
         }
         .image-wrapper {
             width: 100%;
+            margin-top: -200px;
         }
         .rcp-page .competition {
             padding: 80px;
@@ -442,11 +480,7 @@
         }
     }
 </style>
-<script>
-    // $(document).ready(function(){
-    //     $('.slick-slider').slick();
-    // });
-</script>
+
 <div class="rcp-page decoration-page">
     <div class="header">
         <div class="header__text">
@@ -469,25 +503,64 @@
     </div>
     <div class="image-wrapper">
         <div class="slick-slider">
-            <div> Слайд1</div>
-            <div> Слайд2</div>
-            <div> Слайд3</div>
+            <div>
+                <img src="/images/recepie-page/youtubepreview.png" alt="">
+                    <div class="middle__text">
+                    <h1 class="subtitle">
+                        Красим яйца 1
+                    </h1>
+                    <p class="text">
+                        Хотите окрасить яйца и получить узор на скорлупе? Это совсем не сложно. Отварите яйца вкрутую, остудите и протрите насухо, а затем аккуратно, чтоб не треснула скорлупа, обмотайте резинками для денег или суровой ниткой. После этого разведите в воде пищевой краситель, добавьте 5 ст.л. 9%-го уксуса, чтобы краска лучше держалась и не шла разводами, и опустите яйца в эту жидкость на 2-4 минуты. 
+                    </p>
+                    <p class="text">
+                        Достаете, кладете сушиться на бумажное полотенце, а потом снимаете канцелярскую резинку или нитку – на вашем яйце будут четкие прямые линии цвета натуральной скорлупы. Рисунок в клеточку можно получить, если обмотать яйцо сетчатыми чулками или овощной сеткой. Широкие полосы, кружочки или силуэты получаем, обклеивая яйцо кусочками малярного скотча, фигурными наклейками или пластырем. Хотите получить яйцо в крапинку? Обмакните яйцо в воду, а затем обваляйте в рисе, просе или толченой скорлупе, аккуратно оберните яйцо марлей или капроновым чулком и перевяжите ниткой, а затем опустите в краситель. После того как яйцо окрасится и высохнет, ему можно придать дополнительный блеск, смазав скорлупу растительным маслом.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="/images/recepie-page/youtubepreview.png" alt="">
+                    <div class="middle__text">
+                    <h1 class="subtitle">
+                        Красим яйца 2
+                    </h1>
+                    <p class="text">
+                        Хотите окрасить яйца и получить узор на скорлупе? Это совсем не сложно. Отварите яйца вкрутую, остудите и протрите насухо, а затем аккуратно, чтоб не треснула скорлупа, обмотайте резинками для денег или суровой ниткой. После этого разведите в воде пищевой краситель, добавьте 5 ст.л. 9%-го уксуса, чтобы краска лучше держалась и не шла разводами, и опустите яйца в эту жидкость на 2-4 минуты. 
+                    </p>
+                    <p class="text">
+                        Достаете, кладете сушиться на бумажное полотенце, а потом снимаете канцелярскую резинку или нитку – на вашем яйце будут четкие прямые линии цвета натуральной скорлупы. Рисунок в клеточку можно получить, если обмотать яйцо сетчатыми чулками или овощной сеткой. Широкие полосы, кружочки или силуэты получаем, обклеивая яйцо кусочками малярного скотча, фигурными наклейками или пластырем. Хотите получить яйцо в крапинку? Обмакните яйцо в воду, а затем обваляйте в рисе, просе или толченой скорлупе, аккуратно оберните яйцо марлей или капроновым чулком и перевяжите ниткой, а затем опустите в краситель. После того как яйцо окрасится и высохнет, ему можно придать дополнительный блеск, смазав скорлупу растительным маслом.
+                    </p>
+                </div>
+            </div>
         </div>
-        <img src="/images/recepie-page/youtubepreview.png" alt="">
     </div>
-    <div class="middle">
-        <div class="middle__text">
-            <h1 class="subtitle">
-                Красим яйца
-            </h1>
-            <p class="text">
-                Хотите окрасить яйца и получить узор на скорлупе? Это совсем не сложно. Отварите яйца вкрутую, остудите и протрите насухо, а затем аккуратно, чтоб не треснула скорлупа, обмотайте резинками для денег или суровой ниткой. После этого разведите в воде пищевой краситель, добавьте 5 ст.л. 9%-го уксуса, чтобы краска лучше держалась и не шла разводами, и опустите яйца в эту жидкость на 2-4 минуты. 
-            </p>
-            <p class="text">
-                Достаете, кладете сушиться на бумажное полотенце, а потом снимаете канцелярскую резинку или нитку – на вашем яйце будут четкие прямые линии цвета натуральной скорлупы. Рисунок в клеточку можно получить, если обмотать яйцо сетчатыми чулками или овощной сеткой. Широкие полосы, кружочки или силуэты получаем, обклеивая яйцо кусочками малярного скотча, фигурными наклейками или пластырем. Хотите получить яйцо в крапинку? Обмакните яйцо в воду, а затем обваляйте в рисе, просе или толченой скорлупе, аккуратно оберните яйцо марлей или капроновым чулком и перевяжите ниткой, а затем опустите в краситель. После того как яйцо окрасится и высохнет, ему можно придать дополнительный блеск, смазав скорлупу растительным маслом.
-            </p>
+    <!-- <div class="slider-nav">
+        <div class="middle">
+            <div class="middle__text">
+                <h1 class="subtitle">
+                    Красим яйца
+                </h1>
+                <p class="text">
+                    Хотите окрасить яйца и получить узор на скорлупе? Это совсем не сложно. Отварите яйца вкрутую, остудите и протрите насухо, а затем аккуратно, чтоб не треснула скорлупа, обмотайте резинками для денег или суровой ниткой. После этого разведите в воде пищевой краситель, добавьте 5 ст.л. 9%-го уксуса, чтобы краска лучше держалась и не шла разводами, и опустите яйца в эту жидкость на 2-4 минуты. 
+                </p>
+                <p class="text">
+                    Достаете, кладете сушиться на бумажное полотенце, а потом снимаете канцелярскую резинку или нитку – на вашем яйце будут четкие прямые линии цвета натуральной скорлупы. Рисунок в клеточку можно получить, если обмотать яйцо сетчатыми чулками или овощной сеткой. Широкие полосы, кружочки или силуэты получаем, обклеивая яйцо кусочками малярного скотча, фигурными наклейками или пластырем. Хотите получить яйцо в крапинку? Обмакните яйцо в воду, а затем обваляйте в рисе, просе или толченой скорлупе, аккуратно оберните яйцо марлей или капроновым чулком и перевяжите ниткой, а затем опустите в краситель. После того как яйцо окрасится и высохнет, ему можно придать дополнительный блеск, смазав скорлупу растительным маслом.
+                </p>
+            </div>
         </div>
-    </div>
+        <div class="middle">
+            <div class="middle__text">
+                <h1 class="subtitle">
+                    Красим яйца 2
+                </h1>
+                <p class="text">
+                    Хотите окрасить яйца и получить узор на скорлупе? Это совсем не сложно. Отварите яйца вкрутую, остудите и протрите насухо, а затем аккуратно, чтоб не треснула скорлупа, обмотайте резинками для денег или суровой ниткой. После этого разведите в воде пищевой краситель, добавьте 5 ст.л. 9%-го уксуса, чтобы краска лучше держалась и не шла разводами, и опустите яйца в эту жидкость на 2-4 минуты. 
+                </p>
+                <p class="text">
+                    Достаете, кладете сушиться на бумажное полотенце, а потом снимаете канцелярскую резинку или нитку – на вашем яйце будут четкие прямые линии цвета натуральной скорлупы. Рисунок в клеточку можно получить, если обмотать яйцо сетчатыми чулками или овощной сеткой. Широкие полосы, кружочки или силуэты получаем, обклеивая яйцо кусочками малярного скотча, фигурными наклейками или пластырем. Хотите получить яйцо в крапинку? Обмакните яйцо в воду, а затем обваляйте в рисе, просе или толченой скорлупе, аккуратно оберните яйцо марлей или капроновым чулком и перевяжите ниткой, а затем опустите в краситель. После того как яйцо окрасится и высохнет, ему можно придать дополнительный блеск, смазав скорлупу растительным маслом.
+                </p>
+            </div>
+        </div>
+    </div> -->
     <div class="competition">
         <img class="left-1" src="/images/recepie-page/ing-left-1.png" alt="">
         <img class="left-2" src="/images/recepie-page/ing-left-2.png" alt="">
@@ -524,8 +597,58 @@
         </div>
     </div>
     <!-- here comes slider -->
-    <div style="bacground: #fff; height: 200px; width: 200px;" class="white-slider">
-    
+    <div class="main-slider-wrapper">
+        <div class="title">
+            Dr. Oetker рекомендует: <br/> 
+            Лучшие продукты к Пасхе
+        </div>
+        <div class="main-slider-nav main-slider">
+                <div class="main-slider__card">
+                    <img src="/images/main-slider/temp.png" alt="">
+                    <button>
+                        Декор
+                    </button>
+                    <p>
+                        Глазурь со вкусом лимона 1
+                    </p>
+                </div>
+                <div class="main-slider__card">
+                    <img src="/images/main-slider/temp.png" alt="">
+                    <button>
+                        Декор
+                    </button>
+                    <p>
+                        Глазурь со вкусом лимона 1
+                    </p>
+                </div>
+                <div class="main-slider__card">
+                    <img src="/images/main-slider/temp.png" alt="">
+                    <button>
+                        Декор
+                    </button>
+                    <p>
+                        Глазурь со вкусом лимона 2
+                    </p>
+                </div>
+                <div class="main-slider__card">
+                    <img src="/images/main-slider/temp.png" alt="">
+                    <button>
+                        Декор
+                    </button>
+                    <p>
+                        Глазурь со вкусом лимона 3
+                    </p>
+                </div>
+                <div class="main-slider__card">
+                    <img src="/images/main-slider/temp.png" alt="">
+                    <button>
+                        Декор
+                    </button>
+                    <p>
+                        Глазурь со вкусом лимона 3
+                    </p>
+                </div>
+        </div>
     </div>
     <!-- /here comes slider -->
     <div class="bottom">
@@ -543,7 +666,6 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-2.jpg" alt="Бездрожжевой кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -557,7 +679,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-3.jpg" alt="Дрожжевой кулич с меренгой">
                             <div class="text">
                                 <h1 class="title">
@@ -571,7 +692,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-4.jpg" alt="Пасхальный кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -585,7 +705,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-5.jpg" alt="Творожный кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -599,7 +718,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-6.jpg" alt="Итальянский кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -613,7 +731,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-7.jpg" alt="Маковый кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -627,7 +744,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-8.jpg" alt="Кулич на Пасху (на сливках)">
                             <div class="text">
                                 <h1 class="title">
@@ -641,7 +757,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-9.jpg" alt="Кулич с цукатами и орешками">
                             <div class="text">
                                 <h1 class="title">
@@ -655,7 +770,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-10.jpg" alt="Бездрожжевой кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -669,7 +783,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-11.jpg" alt="Кулич-бриошь">
                             <div class="text">
                                 <h1 class="title">
@@ -683,7 +796,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-12.jpg" alt="Быстрые пасхальные куличи">
                             <div class="text">
                                 <h1 class="title">
@@ -697,7 +809,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-13.jpg" alt="Творожный кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -711,7 +822,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-14.jpg" alt="Творожный кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -725,7 +835,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-15.jpg" alt="Александрийский кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -739,7 +848,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-16.jpg" alt="Мини-куличики">
                             <div class="text">
                                 <h1 class="title">
@@ -753,7 +861,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-17.jpg" alt="Куличи 'Нежные'">
                             <div class="text">
                                 <h1 class="title">
@@ -767,7 +874,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-18.jpg" alt="Апельсиновый кулич с шоколадом">
                             <div class="text">
                                 <h1 class="title">
@@ -781,7 +887,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-19.jpg" alt="Кулич для малышки">
                             <div class="text">
                                 <h1 class="title">
@@ -795,7 +900,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-20.jpg" alt="Бабушкин кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -809,7 +913,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-21.jpg" alt="Ванильный кулич">
                             <div class="text">
                                 <h1 class="title">
@@ -823,7 +926,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-22.jpg" alt="Кулич плетёный">
                             <div class="text">
                                 <h1 class="title">
@@ -837,7 +939,6 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <div class="text-tilted"></div>
                             <img src="/images/recepie-page/cards/card-1.jpg" alt="Мини-куличи с апельсиновыми цукатами">
                             <div class="text">
                                 <h1 class="title">
@@ -853,4 +954,55 @@
             </div>
         </div>
     </div>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
+<script>
+    // $(document).ready(function() {
+    //     $('.slick-slider').slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         arrows: false,
+    //         fade: true,
+    //         dots: true,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 1024,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                     slidesToScroll: 1
+    //                 }
+    //             }
+    //         ]
+    //     });
+
+    //     $('.main-slider-nav').slick({
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         arrows: true,
+    //         dots: false,
+    //         nextArrow: '<div class="slider-nav-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+    //         prevArrow: '<div class="slider-nav-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+    //         responsive: [
+    //             {
+    //                 breakpoint: 1024,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                     slidesToScroll: 1,
+    //                     arrows: true,
+    //                     dots: true
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 600,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                     slidesToScroll: 1,
+    //                     arrows: true,
+    //                     dots: true
+    //                 }
+    //             }
+    //         ]
+    //     });
+
+    // });
+</script>
 </div>
