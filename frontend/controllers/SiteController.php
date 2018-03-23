@@ -7,44 +7,15 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use frontend\models\ContactForm;
 
+use common\models\Product;
+use common\models\Post;
+use common\models\Recipe;
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
     /**
      * {@inheritdoc}
      */
@@ -54,11 +25,16 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
         ];
+    }
+
+    public function beforeAction($action) {
+        $products = Product::find()->all();
+        $recipies = Recipe::find()->all();
+        $this->view->params['products'] = $products;
+        $this->view->params['recipies'] = $recipies;
+
+        return parent::beforeAction($action);
     }
 
     /**
@@ -68,7 +44,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $recipies = Recipe::find()->where(['show_on_main' => 1])->limit(2)->all();
+        
+        return $this->render('index', [
+            'recipies' => $recipies,
+        ]);
     }
 
     public function actionPage1()
@@ -76,14 +56,21 @@ class SiteController extends Controller
         return $this->render('page1');
     }
 
-    public function actionPage2()
-    {
-        return $this->render('page2');
-    }
-
     public function actionPage3()
     {
         return $this->render('page3');
+    }
+
+    public function actionRecipe($id)
+    {
+        $recipe = Recipe::findOne($id);
+        if($recipe === null) {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+
+        return $this->render('recipe', [
+            'recipe' => $recipe,
+        ]);
     }
 
     public function actionLogout()

@@ -19,6 +19,8 @@ class m180320_135335_create_table_recipe extends Migration
             'ingredient' => $this->text(),
             'instruction' => $this->text(),
             'video' => $this->string(255),
+            'image' => $this->string(255),
+            'show_on_main' => $this->integer(1)->notNull()->defaultValue(0),
         ], $tableOptions);
     }
 

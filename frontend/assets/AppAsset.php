@@ -19,9 +19,9 @@ class AppAsset extends AssetBundle
         'css/slick-theme.css',
         'css/slider-styles.css',
         'css/main.css',
+        'css/lazy_bone.css',
     ];
     public $js = [
-        'js/jquery-3.3.1.min.js',
         'js/slick.min.js',
         'js/main.js',
         'js/general-page.js'

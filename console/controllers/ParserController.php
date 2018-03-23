@@ -10,7 +10,7 @@ use common\models\Post;
 
 class ParserController extends Controller {
 
-    public function actionIg($hashtag = 'lorealparis_мейкаперы') {
+    public function actionIg($hashtag = 'DrOetker_Пасха') {
         $baseUrl = "https://www.instagram.com/explore/tags/$hashtag/?__a=1";
         $url = $baseUrl;
         $totalCount = 0;

@@ -13,8 +13,11 @@ use common\components\ElfinderInput;
         <div class="col-md-6">
             <?= $form->field($model, 'title')->textInput() ?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <?= $form->field($model, 'cooking_time')->textInput() ?>
+        </div>
+        <div class="col-sm-2">
+            <?= $form->field($model, 'show_on_main')->checkbox();?>
         </div>
     </div>
 
@@ -30,6 +33,9 @@ use common\components\ElfinderInput;
     <div class="row">
         <div class="col-md-6">
             <?= $form->field($model, 'video')->textInput() ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($model, 'image')->widget(ElfinderInput::className());?>
         </div>
     </div>
 
