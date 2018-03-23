@@ -31,15 +31,23 @@ $(document).ready(function () {
         $('.slider-slick').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             fade: true,
             dots: true,
+            nextArrow: '<div class="slider-nav-right slider-nav-right-white"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+            prevArrow: '<div class="slider-nav-left slider-nav-left-white"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false
                     }
                 }
             ]

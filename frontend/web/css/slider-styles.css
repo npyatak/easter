@@ -110,6 +110,12 @@
         border: 1px solid #129467!important;
         color: #129467!important;
     }
+    .slider-nav-right-white {
+        background: #fff!important;
+    }
+    .slider-nav-left-white {
+        background: #fff!important;
+    }
     .slider-nav-left {
         display: inline-block;
         width: 35px;
