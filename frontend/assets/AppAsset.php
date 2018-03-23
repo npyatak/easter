@@ -14,12 +14,12 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/fonts.css',
         'css/font-awesome.min.css',
-        'css/site.css',
+        'css/main.css',
         'css/slick.css',
         'css/slick-theme.css',
-        'css/slider-styles.css',
         'css/main.css',
         'css/lazy_bone.css',
+        'css/slider-styles.css',
     ];
     public $js = [
         'js/slick.min.js',

@@ -23,7 +23,7 @@ use yii\helpers\Url;
         </div>
     </div>
     <div class="image-wrapper">
-        <div class="slick-slider">
+        <div class="slider-slick">
             <div>
                 <img src="/images/recepie-page/youtubepreview.png" alt="">
                     <div class="middle__text">
