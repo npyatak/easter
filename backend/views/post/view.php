@@ -30,27 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            [
-                'attribute' => 'user_id',
-                'format' => 'raw',
-                'value' => function($model) {
-                    return Html::a($model->user->name ? $model->user->fullName : $model->user_id, Url::toRoute(['/user/view', 'id'=>$model->user_id]));
-                }
-            ],  
-            [
-                'attribute' => 'week_id',
-                'format' => 'raw',
-                'value' => function($model) {
-                    return Html::a($model->week->name, Url::toRoute(['week/view', 'id' => $model->week_id]));
-                },
-            ],
-            [
-                'attribute' => 'is_from_ig',
-                'value' => function($model) {
-                    $arr = [0 => 'Нет', 1 => 'Да'];
-                    return $arr[$model->is_from_ig];
-                },
-            ],
+            'ig_user_id',
+            'ig_post_id',
             [
                 'attribute' => 'image',
                 'format' => 'raw',
