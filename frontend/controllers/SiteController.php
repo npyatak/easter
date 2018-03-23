@@ -56,9 +56,9 @@ class SiteController extends Controller
         return $this->render('page1');
     }
 
-    public function actionPage3()
+    public function actionDecor()
     {
-        return $this->render('page3');
+        return $this->render('decor');
     }
 
     public function actionRecipe($id)

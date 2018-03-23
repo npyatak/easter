@@ -21,7 +21,7 @@ use yii\helpers\Url;
                 <div class="text-center"><img class="icon" src="/images/general-page/kulich.png" alt="Kulich"></div>
                 <h2>Лучшие<br> рецепты пасхальных куличей</h2>
                 <div class="text-center">
-                    <a class="simple-link text-white" href="">Смотреть все</a>
+                    <a class="simple-link text-white" href="<?=Url::toRoute(['site/recipies']);?>">Смотреть все</a>
                 </div>
                 <?php if($recipies):?>
                     <div class="contest-items clearfix">
@@ -31,7 +31,7 @@ use yii\helpers\Url;
                                     <img src="<?=$recipe->image;?>" alt="<?=$recipe->title;?>">
                                 </a>
                                 <div class="text">
-                                    <h3><a href=""><?=$recipe->title;?></a></h3>
+                                    <h3><a href="<?=$recipe->url;?>"><?=$recipe->title;?></a></h3>
                                     <?=$recipe->ingredient;?>
                                     <div class="actions">
                                         <a class="p-btn btn-rounded btn-red" href="<?=$recipe->url;?>">Как приготовить</a>
@@ -116,7 +116,7 @@ use yii\helpers\Url;
                                     <p>Самый яркий и узнаваемый пасхальный символ – крашеные яйца. Они могут быть как настоящими, куриными или перепелиными, так и искусственными – выточенными из дерева или отлитыми из пластика и других материалов.</p>
                                     <p>Если вы имеете дело с натуральными яйцами и хотите сохранить их съедобные свойства, то воспользуйтесь пищевыми красителями.</p>
                                 </div>
-                                <a class="p-btn btn-rounded btn-red" href="">Читать</a>
+                                <a class="p-btn btn-rounded btn-red" href="<?=Url::toRoute(['site/decor']);?>">Читать</a>
                             </div>
                             <div class="right" style="background-image:url('/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
                         </div>
@@ -129,14 +129,14 @@ use yii\helpers\Url;
                                     <p>Самый яркий и узнаваемый пасхальный символ – крашеные яйца. Они могут быть как настоящими, куриными или перепелиными, так и искусственными – выточенными из дерева или отлитыми из пластика и других материалов.</p>
                                     <p>Если вы имеете дело с натуральными яйцами и хотите сохранить их съедобные свойства, то воспользуйтесь пищевыми красителями.</p>
                                 </div>
-                                <a class="p-btn btn-rounded btn-red" href="">Читать</a>
+                                <a class="p-btn btn-rounded btn-red" href="<?=Url::toRoute(['site/decor']);?>">Читать</a>
                             </div>
                             <div class="right" style="background-image:url('/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center">
-                    <a class="simple-link" href="">Смотреть все</a>
+                    <a class="simple-link" href="<?=Url::toRoute(['site/decor']);?>">Смотреть все</a>
                 </div>
             </div>
         </div>
