@@ -78,6 +78,11 @@ class SiteController extends Controller
         return $this->render('eastercake');
     }
 
+    public function actionParticipants()
+    {
+        return $this->render('participants');
+    }
+
     public function actionLogout()
     {
         Yii::$app->user->logout();
