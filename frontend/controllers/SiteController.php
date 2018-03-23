@@ -73,6 +73,11 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionEastercake()
+    {
+        return $this->render('eastercake');
+    }
+
     public function actionLogout()
     {
         Yii::$app->user->logout();

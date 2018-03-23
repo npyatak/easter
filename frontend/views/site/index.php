@@ -66,15 +66,15 @@ use yii\helpers\Url;
     <div class="fourth-block">
         <div class="top">
             <div class="g-container">
-                <div class="text-center"><img class="icon" src="/frontend/web/images/general-page/kulich-2.png" alt="Kulich"></div>
+                <div class="text-center"><img class="icon" src="/images/general-page/kulich-2.png" alt="Kulich"></div>
                 <h2>Другие рецепты к пасхе</h2>
                 <div class="text-center">
-                    <a class="simple-link text-white" href="">Смотреть все</a>
+                    <a class="simple-link text-white" href="<?=Url::toRoute(['site/eastercake']);?>">Смотреть все</a>
                 </div>
                 <div class="contest-items clearfix">
                     <div class="contest-item">
                         <a href="" class="image">
-                            <img src="/frontend/web/images/general-page/pasha-3.jpg" alt="Сладкие пасхальные яица">
+                            <img src="/images/general-page/pasha-3.jpg" alt="Сладкие пасхальные яица">
                         </a>
                         <div class="text">
                             <h3><a href="">Сладкие пасхальные яица</a></h3>
@@ -82,13 +82,13 @@ use yii\helpers\Url;
                             <p>1 упаковка (7г) Дрожжей Dr. Oetker, 200 мл теплого молока, 550 г муки, 3 яйца, 100 г сливочного масла, 180 г сахара, 1 щепотка соли, 1 упаковка (8г) Ванильного сахара Dr. Oetker, 1 упаковка (10г) Разрыхлителя теста Dr. Oetker. 50 г изюма, 2 ст.л. меда</p>
                             <div class="actions">
                                 <a class="p-btn btn-rounded btn-red" href="">Как приготовить</a>
-                                <a class="simple-link" href="">Смотреть все</a>
+                                <a class="simple-link" href="<?=Url::toRoute(['site/eastercake']);?>">Смотреть все</a>
                             </div>
                         </div>
                     </div>
                     <div class="contest-item">
                         <a href="" class="image">
-                            <img src="/frontend/web/images/general-page/pasha-4.jpg" alt="Ромовая баба">
+                            <img src="/images/general-page/pasha-4.jpg" alt="Ромовая баба">
                         </a>
                         <div class="text">
                             <h3><a href="">Ромовая баба</a></h3>
@@ -96,7 +96,7 @@ use yii\helpers\Url;
                             <p>1 упаковка (7г) Дрожжей Dr. Oetker, 200 мл теплого молока, 550 г муки, 3 яйца, 100 г сливочного масла, 180 г сахара, 1 щепотка соли, 1 упаковка (8г) Ванильного сахара Dr. Oetker, 1 упаковка (10г) Разрыхлителя теста Dr. Oetker. 50 г изюма, 2 ст.л. меда</p>
                             <div class="actions">
                                 <a class="p-btn btn-rounded btn-red" href="">Как приготовить</a>
-                                <a class="simple-link" href="">Смотреть все</a>
+                                <a class="simple-link" href="<?=Url::toRoute(['site/eastercake']);?>">Смотреть все</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ use yii\helpers\Url;
         </div>
         <div class="bottom">
             <div class="g-container">
-                <div class="text-center"><img class="icon" src="/frontend/web/images/general-page/kulich-3.png" alt="Kulich"></div>
+                <div class="text-center"><img class="icon" src="/images/general-page/kulich-3.png" alt="Kulich"></div>
                 <h2>Украшаем дом к пасхе</h2>
                 <div class="decorate">
                     <div class="item">
@@ -118,7 +118,7 @@ use yii\helpers\Url;
                                 </div>
                                 <a class="p-btn btn-rounded btn-red" href="">Читать</a>
                             </div>
-                            <div class="right" style="background-image:url('/frontend/web/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
+                            <div class="right" style="background-image:url('/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
                         </div>
                     </div>
                     <div class="item">
@@ -131,7 +131,7 @@ use yii\helpers\Url;
                                 </div>
                                 <a class="p-btn btn-rounded btn-red" href="">Читать</a>
                             </div>
-                            <div class="right" style="background-image:url('/frontend/web/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
+                            <div class="right" style="background-image:url('/images/general-page/pozdravleniya-s-pashoy-2017-korotkie-6.png')"></div>
                         </div>
                     </div>
                 </div>

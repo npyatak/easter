@@ -14,6 +14,7 @@
             </div>
         <?php endforeach;?>
     </div>
+    <a href="http://academy.oetker.ru/range/">Смотреть все</a>
 </div>
 <!-- /here comes slider -->
 <?php endif;?>
