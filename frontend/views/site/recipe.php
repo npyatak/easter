@@ -9,7 +9,7 @@
                 <?=$recipe->title;?>
             </h1>
             <p class="text">
-                <?=$recipe->ingredients;?>
+                <?=$recipe->ingredient;?>
             </p>
             <p class="text">
                 <strong>Время приготовления:</strong> <br/>
@@ -25,7 +25,7 @@
             <h1 class="subtitle">
                 Способ приготовления
             </h1>
-            <?=$recipe->instructions;?>
+            <?=$recipe->instruction;?>
         </div>
     </div>
     <div class="competition">
