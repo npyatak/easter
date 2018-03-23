@@ -22,6 +22,7 @@ class m180320_135335_create_table_recipe extends Migration
             'image' => $this->string(255),
             'alias' => $this->string(255)->notNull(),
             'show_on_main' => $this->integer(1)->notNull()->defaultValue(0),
+            'type' => $this->integer(1),
         ], $tableOptions);
     }
 

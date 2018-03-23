@@ -18,7 +18,7 @@ class RecipeSearch extends Recipe
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['id', 'type'], 'integer'],
             [['title', 'alias'], 'safe'],
         ];
     }
@@ -60,6 +60,7 @@ class RecipeSearch extends Recipe
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'type' => $this->type,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])

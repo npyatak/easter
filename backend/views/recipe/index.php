@@ -4,7 +4,7 @@ use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 
-use common\models\Card;
+use common\models\Recipe;
 
 $this->title = 'Рецепты';
 $this->params['breadcrumbs'][] = $this->title;
@@ -24,6 +24,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'id',
                 'title',
                 'alias',
+                [
+                    'attribute' => 'type',
+                    'format' => 'raw',
+                    'value' => function($data) {
+                        return $data->typeLabel;
+                    },
+                    'filter' => Html::activeDropDownList($searchModel, 'type', Recipe::getTypesArray(), ['prompt'=>''])
+                ],
                 [
                     'class' => 'yii\grid\ActionColumn',
                     'template' => '{update} {delete}'

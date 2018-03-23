@@ -24,7 +24,7 @@ class Recipe extends \yii\db\ActiveRecord
         return [
             [['title', 'alias'], 'required'],
             [['title', 'cooking_time', 'ingredient', 'instruction', 'video', 'image', 'alias'], 'string'],
-            [['show_on_main'], 'integer'],
+            [['show_on_main', 'type'], 'integer'],
         ];
     }
 
@@ -43,10 +43,22 @@ class Recipe extends \yii\db\ActiveRecord
             'show_on_main' => 'Показать на главной',
             'image' => 'Изображение',
             'alias' => 'Алиас',
+            'type' => 'Тип',
         ];
     }
 
     public function getUrl() {
         return Url::toRoute(['site/recipe', 'alias' => $this->alias]);
+    }
+
+    public function getTypesArray() {
+        return [
+            1 => 'Кулич',
+            2 => 'Не кулич',
+        ];
+    }
+
+    public function getTypeLabel() {
+        return $this->type ? $this->typesArray[$this->type] : null;
     }
 }

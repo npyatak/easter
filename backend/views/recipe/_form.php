@@ -10,16 +10,22 @@ use common\components\ElfinderInput;
     <?php $params = Yii::$app->params['defaultShare'];?>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <?= $form->field($model, 'title')->textInput() ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <?= $form->field($model, 'alias')->textInput() ?>
         </div>
-        <div class="col-md-2">
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <?= $form->field($model, 'type')->dropDownList($model->typesArray, ['prompt' => 'Не определено']);?>
+        </div>
+        <div class="col-md-3">
             <?= $form->field($model, 'cooking_time')->textInput() ?>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <?= $form->field($model, 'show_on_main')->checkbox();?>
         </div>
     </div>
