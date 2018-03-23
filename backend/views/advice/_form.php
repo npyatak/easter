@@ -7,17 +7,13 @@ use common\components\ElfinderInput;
 
 <div class="add-form">
     <?php $form = ActiveForm::begin();?>
-    <?php $params = Yii::$app->params['defaultShare'];?>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             <?= $form->field($model, 'title')->textInput() ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'alias')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'cooking_time')->textInput() ?>
+        <div class="col-md-5">
+            <?= $form->field($model, 'image')->widget(ElfinderInput::className());?>
         </div>
         <div class="col-sm-2">
             <?= $form->field($model, 'show_on_main')->checkbox();?>
@@ -26,21 +22,15 @@ use common\components\ElfinderInput;
 
     <div class="row">
         <div class="col-md-6">
-            <?= $form->field($model, 'ingredient')->textarea() ?>
+            <?= $form->field($model, 'preview')->textInput() ?>
         </div>
         <div class="col-md-6">
-            <?= $form->field($model, 'instruction')->textarea();?>
+            <?= $form->field($model, 'preview_image')->widget(ElfinderInput::className());?>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <?= $form->field($model, 'video')->textInput() ?>
-        </div>
-        <div class="col-md-6">
-            <?= $form->field($model, 'image')->widget(ElfinderInput::className());?>
-        </div>
-    </div>
+    
+    <?= $form->field($model, 'text')->textarea() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

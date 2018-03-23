@@ -10,34 +10,18 @@ use common\components\ElfinderInput;
     <?php $params = Yii::$app->params['defaultShare'];?>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-8">
             <?= $form->field($model, 'title')->textInput() ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($model, 'alias')->textInput() ?>
-        </div>
-        <div class="col-md-2">
-            <?= $form->field($model, 'cooking_time')->textInput() ?>
-        </div>
-        <div class="col-sm-2">
+        <div class="col-sm-4">
             <?= $form->field($model, 'show_on_main')->checkbox();?>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-6">
-            <?= $form->field($model, 'ingredient')->textarea() ?>
+            <?= $form->field($model, 'link')->textInput() ?>
         </div>
-        <div class="col-md-6">
-            <?= $form->field($model, 'instruction')->textarea();?>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <?= $form->field($model, 'video')->textInput() ?>
-        </div>
-        <div class="col-md-6">
             <?= $form->field($model, 'image')->widget(ElfinderInput::className());?>
         </div>
     </div>

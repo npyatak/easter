@@ -8,17 +8,17 @@ use yii\helpers\Url;
         <h1 class="title">Другие рецепты куличей</h1>
         <a href="<?=Url::toRoute(['site/recipies']);?>" class="link">Смортеть все</a>
     </div>
-    <?php if($this->params['recipies']):?>
+    <?php if($this->params['previews']):?>
     <div class="cards-wrapper">
         <div class="container">
             <div class="row">
-                <?php foreach ($this->params['recipies'] as $recipe):?>
+                <?php foreach ($this->params['previews'] as $p):?>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="card">
-                            <img src="<?=$recipe->image;?>" alt="<?=$recipe->title;?>">
+                            <img src="<?=$p->image;?>" alt="<?=$p->title;?>">
                             <div class="text">
-                                <h1 class="title"><?=$recipe->title;?></h1>
-                                <a href="<?=$recipe->url;?>" class="link">Читать</a>
+                                <h1 class="title"><?=$p->title;?></h1>
+                                <a href="<?=$p->link;?>" class="link">Читать</a>
                             </div>
                         </div>
                     </div>

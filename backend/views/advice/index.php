@@ -6,7 +6,7 @@ use yii\widgets\Pjax;
 
 use common\models\Card;
 
-$this->title = 'Рецепты';
+$this->title = 'Советы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Добавить рецепт', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить совет', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?php Pjax::begin(); ?>    
         <?= GridView::widget([
@@ -23,7 +23,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 'id',
                 'title',
-                'alias',
+                [
+                    'attribute' => 'show_on_main',
+                    'format' => 'raw',
+                    'value' => function($data) {
+                        $arr = [1 => 'Да', 0 => 'Нет'];
+                        return $arr[$data->show_on_main];
+                    },
+                    'filter' => Html::activeDropDownList($searchModel, 'show_on_main', [1 => 'Да', 0 => 'Нет'], ['prompt'=>''])
+                ],
                 [
                     'class' => 'yii\grid\ActionColumn',
                     'template' => '{update} {delete}'

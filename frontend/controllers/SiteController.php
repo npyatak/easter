@@ -11,6 +11,7 @@ use yii\filters\AccessControl;
 use common\models\Product;
 use common\models\Post;
 use common\models\Recipe;
+use common\models\Preview;
 /**
  * Site controller
  */
@@ -30,9 +31,9 @@ class SiteController extends Controller
 
     public function beforeAction($action) {
         $products = Product::find()->all();
-        $recipies = Recipe::find()->all();
+        $previews = Preview::find()->all();
         $this->view->params['products'] = $products;
-        $this->view->params['recipies'] = $recipies;
+        $this->view->params['previews'] = $previews;
 
         return parent::beforeAction($action);
     }
@@ -61,9 +62,9 @@ class SiteController extends Controller
         return $this->render('decor');
     }
 
-    public function actionRecipe($id)
+    public function actionRecipe($alias)
     {
-        $recipe = Recipe::findOne($id);
+        $recipe = Recipe::find()->where(['alias' => $alias])->one();
         if($recipe === null) {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

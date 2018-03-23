@@ -5,16 +5,7 @@ namespace common\models;
 use Yii;
 
 use yii\helpers\Url;
-/**
- * This is the model class for table "recipe".
- *
- * @property int $id
- * @property string $title
- * @property string $cooking_time
- * @property string $ingredient
- * @property string $instruction
- * @property string $video
- */
+
 class Recipe extends \yii\db\ActiveRecord
 {
     /**
@@ -31,8 +22,8 @@ class Recipe extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title'], 'required'],
-            [['title', 'cooking_time', 'ingredient', 'instruction', 'video', 'image'], 'string'],
+            [['title', 'alias'], 'required'],
+            [['title', 'cooking_time', 'ingredient', 'instruction', 'video', 'image', 'alias'], 'string'],
             [['show_on_main'], 'integer'],
         ];
     }
@@ -51,10 +42,11 @@ class Recipe extends \yii\db\ActiveRecord
             'video' => 'Ссылка на видео',
             'show_on_main' => 'Показать на главной',
             'image' => 'Изображение',
+            'alias' => 'Алиас',
         ];
     }
 
     public function getUrl() {
-        return Url::toRoute(['site/recipe', 'id' => $this->id]);
+        return Url::toRoute(['site/recipe', 'alias' => $this->alias]);
     }
 }

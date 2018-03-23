@@ -66,5 +66,5 @@
 
     <?=$this->render('_products');?>
 
-    <?=$this->render('_other_recipies');?>
+    <?=$this->render('_previews');?>
 </div>
