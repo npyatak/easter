@@ -4,10 +4,10 @@ use yii\helpers\Url;
 
 <div class="br-block">
     <div class="text-center"><img class="icon" src="/images/general-page/kulich.png" alt="Kulich"></div>
-    <h2>Лучшие<br> рецепты пасхальных куличей</h2>
-    <?php if($recipiesType1):?>
+    <h2>Другие рецепты к Пасхе</h2>
+    <?php if($recipiesType2):?>
         <div class="container">
-            <?php foreach ($recipiesType1 as $recipe):?>
+            <?php foreach ($recipiesType2 as $recipe):?>
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="br-block__item">

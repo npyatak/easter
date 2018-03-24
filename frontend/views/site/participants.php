@@ -20,75 +20,25 @@
     <h1 class="block__title">
         Участники
     </h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="participants__block">
-                    <img src="/images/participants-page/temp.png" alt="">
-                    <div class="text">
-                        <h2 class="name">
-                            Наталья Васильева
-                        </h2>
-                        <p class="comment">
-                            Комментарий в две строчки примерно
-                        </p>
+    <?php if($posts):?>
+        <div class="container">
+            <div class="row">
+                <?php foreach ($posts as $post):?>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="participants__block">
+                            <img src="<?=$post->thumbUrl;?>" alt="">
+                            <div class="text">
+                                <!-- <h2 class="name"><?=$post->ig_user_id;?></h2> -->
+                                <!-- <p class="comment">
+                                    Комментарий в две строчки примерно
+                                </p> -->
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="participants__block">
-                    <img src="/images/participants-page/temp.png" alt="">
-                    <div class="text">
-                        <h2 class="name">
-                            Наталья Васильева
-                        </h2>
-                        <p class="comment">
-                            Комментарий в две строчки примерно
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="participants__block">
-                    <img src="/images/participants-page/temp.png" alt="">
-                    <div class="text">
-                        <h2 class="name">
-                            Наталья Васильева
-                        </h2>
-                        <p class="comment">
-                            Комментарий в две строчки примерно
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="participants__block">
-                    <img src="/images/participants-page/temp.png" alt="">
-                    <div class="text">
-                        <h2 class="name">
-                            Наталья Васильева
-                        </h2>
-                        <p class="comment">
-                            Комментарий в две строчки примерно
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="participants__block">
-                    <img src="/images/participants-page/temp.png" alt="">
-                    <div class="text">
-                        <h2 class="name">
-                            Наталья Васильева
-                        </h2>
-                        <p class="comment">
-                            Комментарий в две строчки примерно
-                        </p>
-                    </div>
-                </div>
+                <?php endforeach;?>
             </div>
         </div>
-    </div>
+    <?php endif;?>
     <div class="action__block">
         <button class="p-btn btn-rounded">
             Загрузить еще

@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
+use yii\web\NotFoundHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -12,6 +13,7 @@ use common\models\Product;
 use common\models\Post;
 use common\models\Recipe;
 use common\models\Preview;
+use common\models\Advice;
 /**
  * Site controller
  */
@@ -45,21 +47,25 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $recipies = Recipe::find()->where(['show_on_main' => 1])->limit(2)->all();
+        $recipiesType1 = Recipe::find()->where(['show_on_main' => 1, 'type' => 1])->limit(2)->all();
+        $recipiesType2 = Recipe::find()->where(['show_on_main' => 1, 'type' => 2])->limit(2)->all();
+
+        $advices = Advice::find()->where(['show_on_main' => 1])->all();
         
         return $this->render('index', [
-            'recipies' => $recipies,
+            'recipiesType1' => $recipiesType1,
+            'recipiesType2' => $recipiesType2,
+            'advices' => $advices,
         ]);
-    }
-
-    public function actionPage1()
-    {
-        return $this->render('page1');
     }
 
     public function actionDecor()
     {
-        return $this->render('decor');
+        $advices = Advice::find()->all();
+
+        return $this->render('decor', [
+            'advices' => $advices,
+        ]);
     }
 
     public function actionRecipe($alias)
@@ -76,12 +82,33 @@ class SiteController extends Controller
 
     public function actionEastercake()
     {
-        return $this->render('eastercake');
+        $recipiesType1 = Recipe::find()->where(['show_on_main' => 1, 'type' => 1])->all();
+        $recipiesType2 = Recipe::find()->where(['show_on_main' => 1, 'type' => 2])->limit(3)->all();
+
+        return $this->render('eastercake', [
+            'recipiesType1' => $recipiesType1,
+            'recipiesType2' => $recipiesType2,
+        ]);
+    }
+
+    public function actionRecipies()
+    {
+        $recipiesType1 = Recipe::find()->where(['show_on_main' => 1, 'type' => 1])->limit(3)->all();
+        $recipiesType2 = Recipe::find()->where(['show_on_main' => 1, 'type' => 2])->all();
+
+        return $this->render('recipies', [
+            'recipiesType1' => $recipiesType1,
+            'recipiesType2' => $recipiesType2,
+        ]);
     }
 
     public function actionParticipants()
     {
-        return $this->render('participants');
+        $posts = Post::find()->where(['status' => Post::STATUS_ACTIVE])->all();
+
+        return $this->render('participants', [
+            'posts' => $posts,
+        ]);
     }
 
     public function actionLogout()

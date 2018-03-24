@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\bootstrap\ActiveForm;
 use common\components\ElfinderInput;
+use mihaildev\ckeditor\CKEditor;
 ?>
 
 <div class="add-form">
@@ -29,8 +30,11 @@ use common\components\ElfinderInput;
         </div>
     </div>
 
-    
-    <?= $form->field($model, 'text')->textarea() ?>
+    <?= $form->field($model, 'text')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions('elfinder', [
+            'allowedContent' => true,
+        ])
+    ]);?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

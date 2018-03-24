@@ -23,8 +23,9 @@ class Recipe extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'alias'], 'required'],
-            [['title', 'cooking_time', 'ingredient', 'instruction', 'video', 'image', 'alias'], 'string'],
+            [['title', 'cooking_time', 'video', 'image', 'alias'], 'string'],
             [['show_on_main', 'type'], 'integer'],
+            [['ingredient', 'instruction'], 'safe'],
         ];
     }
 

@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\bootstrap\ActiveForm;
 use common\components\ElfinderInput;
+use mihaildev\ckeditor\CKEditor;
 ?>
 
 <div class="add-form">
@@ -30,14 +31,17 @@ use common\components\ElfinderInput;
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <?= $form->field($model, 'ingredient')->textarea() ?>
-        </div>
-        <div class="col-md-6">
-            <?= $form->field($model, 'instruction')->textarea();?>
-        </div>
-    </div>
+    <?= $form->field($model, 'ingredient')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions('elfinder', [
+            'allowedContent' => true,
+        ])
+    ]);?>
+
+    <?= $form->field($model, 'instruction')->widget(CKEditor::className(), [
+        'editorOptions' => \mihaildev\elfinder\ElFinder::ckeditorOptions('elfinder', [
+            'allowedContent' => true,
+        ])
+    ]);?>
 
     <div class="row">
         <div class="col-md-6">

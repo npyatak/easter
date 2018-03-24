@@ -79,7 +79,7 @@ class Post extends \yii\db\ActiveRecord
 
     public function getThumbUrl() {
         $exp = explode('.', $this->image);
-        $thumbFileName = $path.$exp[0].'_thumb.'.$exp[1];
+        $thumbFileName = $exp[0].'_thumb.'.$exp[1];
         return Yii::$app->urlManagerFrontEnd->createAbsoluteUrl('/uploads/post/'.$thumbFileName);
     }
 
