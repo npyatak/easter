@@ -25,7 +25,7 @@
             <h1 class="subtitle">
                 Способ приготовления
             </h1>
-            <?=$recipe->instruction;?>
+            <p class="text"> <?=$recipe->instruction;?> </p>
         </div>
     </div>
     <div class="competition">
