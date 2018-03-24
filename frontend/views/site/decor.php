@@ -10,19 +10,19 @@ use yii\helpers\Url;
                 Dr. Oetker
             </h1>
             <h1 class="subtitle">
-                Как украсить дом к Пасхе: лучшие советы
+                Как украсить дом к Пасхе: лучшие <br/> советы
             </h1>
-            <p class="text">
+            <!-- <p class="text">
                 <strong>Для теста:</strong> <br/>
                 1 упаковка (7г) Дрожжей Dr. Oetker, 200 мл теплого молока, 550 г муки, 3 яйца, 100 г сливочного масла, 180 г сахара, 1 щепотка соли, 1 упаковка (8г) Ванильного сахара Dr. Oetker, 1 упаковка (10г) Разрыхлителя теста Dr. Oetker. 50 г изюма, 2 ст.л. меда
             </p>
             <p class="text">
                 <strong>Время приготовления:</strong> <br/>
                 15 минут
-            </p>
+            </p> -->
         </div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper image-wrapper-custom">
         <div class="slider-slick">
             <div>
                 <img src="/images/recepie-page/youtubepreview.png" alt="">

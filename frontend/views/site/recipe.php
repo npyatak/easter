@@ -1,5 +1,5 @@
 <div class="rcp-page">
-    <div class="header">
+    <div class="header custom-header">
         <div class="header__text">
             <h1 class="title">
                 Пасха с <br/>

@@ -3,12 +3,16 @@
         position: relative;
     }
     .rcp-page .header {
-        height: 840px;
+        height: 740px;
         background: url('../images/recepie-page/flowers.png') no-repeat center;
         -webkit-background-size: cover;
         background-size: cover;
         display: flex;
         justify-content: center;
+    }
+    .custom-header {
+        height: 720px;
+        background-position: 0 -200px;
     }
     .header .header__text {
         position: absolute;
@@ -41,7 +45,7 @@
         line-height: 25px;
         font-size: 16px;
         margin-bottom: 30px;
-        font-family: 'PT-Serif-Regular';
+        /* font-family: 'PT-Serif-Regular'; */
     }
     .image-wrapper {
         width: 940px;
@@ -53,6 +57,9 @@
     }
     .image-wrapper img {
         width: 100%;
+    }
+    .image-wrapper-custom {
+        margin-top: -350px;
     }
     /* middle part */
     .decoration-page .middle {
@@ -303,59 +310,59 @@
         margin-bottom: 30px;
         margin-top: 0;
     }
-.participants {
-    background: url('../images/recepie-page/bg-1.png') no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding: 100px 20px;
-}
-.participants .action__block {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    text-align: -webkit-center;
-}
-.participants .action__block button {
-    background-color: #FF0509 !important;
-    color: #fff;
-}
-.participants .block__title {
-    color: #fff;
-    font-size: 48px;
-    font-family: 'PT-Serif-Bold-Italic';
-    font-style: italic;
-    text-align: center;
-    text-align: -webkit-center;
-    margin-bottom: 50px;
-}
-.participants__block {
-    max-width: 300px;
-    margin: 40px auto 0 auto;
-}
-.participants__block img {
-    width: 100%;
-}
-.participants__block .text {
-    background: #fff;
-    padding: 20px 15px;
-}
-.participants__block .name {
-    text-align: center;
-    text-align: -webkit-center;
-    font-size: 20px;
-    font-family: 'PT-Serif-Regular';
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 500px;
-}
-.participants__block .comment {
-    text-align: center;
-    text-align: -webkit-center;
-    font-size: 16px;
-    font-family: 'PT-Serif-Regular';
-    color: #666259;
-    line-height: 30px;
-}
+    .participants {
+        background: url('../images/recepie-page/bg-1.png') no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 100px 20px;
+    }
+    .participants .action__block {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        text-align: -webkit-center;
+    }
+    .participants .action__block button {
+        background-color: #FF0509 !important;
+        color: #fff;
+    }
+    .participants .block__title {
+        color: #fff;
+        font-size: 48px;
+        font-family: 'PT-Serif-Bold-Italic';
+        font-style: italic;
+        text-align: center;
+        text-align: -webkit-center;
+        margin-bottom: 50px;
+    }
+    .participants__block {
+        max-width: 300px;
+        margin: 40px auto 0 auto;
+    }
+    .participants__block img {
+        width: 100%;
+    }
+    .participants__block .text {
+        background: #fff;
+        padding: 20px 15px;
+    }
+    .participants__block .name {
+        text-align: center;
+        text-align: -webkit-center;
+        font-size: 20px;
+        font-family: 'PT-Serif-Regular';
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500px;
+    }
+    .participants__block .comment {
+        text-align: center;
+        text-align: -webkit-center;
+        font-size: 16px;
+        font-family: 'PT-Serif-Regular';
+        color: #666259;
+        line-height: 30px;
+    }
 /* @media */    
 @media screen and (min-width: 1200px) {
     .hide-desktop {
@@ -428,6 +435,9 @@
     }
     .decoration-page .middle {
         padding: 20px;
+    }
+    .image-wrapper-custom {
+        margin-top: -300px;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
