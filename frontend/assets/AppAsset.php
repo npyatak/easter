@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
         'css/main.css',
         'css/lazy_bone.css',
         'css/slider-styles.css',
+        'css/menu.css',
     ];
     public $js = [
         'js/slick.min.js',
