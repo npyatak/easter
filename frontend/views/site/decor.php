@@ -22,7 +22,7 @@ use yii\helpers\Url;
                         <img src="<?=$advice->image;?>" alt="<?=$advice->title;?>">
                             <div class="middle__text">
                             <h1 class="subtitle"><?=$advice->title;?></h1>
-                            <?=$advice->text;?>
+                            <p class="text"><?=$advice->text;?></p>
                         </div>
                     </div>
                 <?php endforeach;?>
