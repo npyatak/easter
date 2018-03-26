@@ -12,10 +12,9 @@
         </div>
     </div>
 </div>
-<div style="background:red;height:200px;width:100%;">
-    Dr. Oetker рекомендует: <br/> 
-    Лучшие продукты к Пасхе
-</div>
+
+<?=$this->render('_products');?>
+
 <div class="participants">
     <h1 class="block__title">
         Участники

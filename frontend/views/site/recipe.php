@@ -11,14 +11,26 @@
             <p class="text">
                 <?=$recipe->ingredient;?>
             </p>
-            <p class="text">
+            <!-- <p class="text">
                 <strong>Время приготовления:</strong> <br/>
                 <?=$recipe->cooking_time;?>
-            </p>
+            </p> -->
         </div>
     </div>
     <div class="image-wrapper">
-        <img src="<?=$recipe->image;?>" alt="">
+        <?php if($recipe->video):?>
+            <iframe id="challengeVideo" 
+                class="video"
+                src="http://www.youtube.com/embed/M7lc1UVf-VE"
+                frameborder="0" 
+                allowfullscreen
+                width=940
+                height=600
+                >
+            </iframe>
+        <?php else:?>
+            <img src="<?=$recipe->image;?>" alt="">
+        <?php endif;?>
     </div>
     <div class="middle">
         <div class="middle__text">

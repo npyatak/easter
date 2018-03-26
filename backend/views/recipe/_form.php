@@ -23,9 +23,9 @@ use mihaildev\ckeditor\CKEditor;
         <div class="col-sm-6">
             <?= $form->field($model, 'type')->dropDownList($model->typesArray, ['prompt' => 'Не определено']);?>
         </div>
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <?= $form->field($model, 'cooking_time')->textInput() ?>
-        </div>
+        </div> -->
         <div class="col-sm-3">
             <?= $form->field($model, 'show_on_main')->checkbox();?>
         </div>
