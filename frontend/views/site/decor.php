@@ -20,9 +20,15 @@ use yii\helpers\Url;
                 <?php foreach ($advices as $advice):?>
                     <div>
                         <img src="<?=$advice->image;?>" alt="<?=$advice->title;?>">
-                            <div class="middle__text">
+                    </div>
+                <?php endforeach;?>
+            </div>
+            <div class="slider-slick-for">
+                <?php foreach ($advices as $advice):?>
+                    <div>
+                        <div class="middle__text">
                             <h1 class="subtitle"><?=$advice->title;?></h1>
-                            <?=$advice->text;?>
+                            <p class="text"><?=$advice->text;?></p>
                         </div>
                     </div>
                 <?php endforeach;?>

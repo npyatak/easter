@@ -7,11 +7,11 @@ use yii\helpers\Url;
     <h2>Лучшие<br> рецепты пасхальных куличей</h2>
     <?php if($recipiesType1):?>
         <div class="container">
-            <?php foreach ($recipiesType1 as $recipe):?>
             <div class="row">
+            <?php foreach ($recipiesType1 as $recipe):?>
                 <div class="col-md-6 col-sm-6">
                     <div class="br-block__item">
-                        <a href="" class="image" style="background-image:url(<?=$recipe->image;?>)"></a>
+                        <a href="<?=$recipe->url;?>" class="image" style="background-image:url(<?=$recipe->image;?>)"></a>
                         <div class="text">
                             <h3><a href="<?=$recipe->url;?>"><?=$recipe->title;?></a></h3>
                             <?=$recipe->ingredient;?>
@@ -21,8 +21,8 @@ use yii\helpers\Url;
                         </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach;?>
+            </div>
         </div>
     <?php endif;?>
 </div>

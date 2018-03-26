@@ -11,17 +11,13 @@
             <p class="text">
                 <?=$recipe->ingredient;?>
             </p>
-            <!-- <p class="text">
-                <strong>Время приготовления:</strong> <br/>
-                <?=$recipe->cooking_time;?>
-            </p> -->
         </div>
     </div>
     <div class="image-wrapper">
         <?php if($recipe->video):?>
-            <iframe id="challengeVideo" 
+            <iframe id="recipe-video" 
                 class="video"
-                src="http://www.youtube.com/embed/M7lc1UVf-VE"
+                src="<?=$recipe->video;?>"
                 frameborder="0" 
                 allowfullscreen
                 width=940
@@ -29,7 +25,7 @@
                 >
             </iframe>
         <?php else:?>
-            <img src="<?=$recipe->image;?>" alt="">
+            <img src="<?=$recipe->image;?>" alt="<?=$recipe->title;?>">
         <?php endif;?>
     </div>
     <div class="middle">
@@ -46,4 +42,5 @@
     <?=$this->render('_products');?>
 
     <?=$this->render('_previews');?>
+    
 </div>
