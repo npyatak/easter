@@ -11,10 +11,6 @@
             <p class="text">
                 <?=$recipe->ingredient;?>
             </p>
-            <p class="text">
-                <strong>Время приготовления:</strong> <br/>
-                <?=$recipe->cooking_time;?>
-            </p>
         </div>
     </div>
     <div class="image-wrapper">
@@ -34,4 +30,5 @@
     <?=$this->render('_products');?>
 
     <?=$this->render('_previews');?>
+    
 </div>
