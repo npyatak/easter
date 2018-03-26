@@ -35,12 +35,8 @@ AppAsset::register($this);
                     <a href="/"><img src="/frontend/web/images/logo/logo.png" alt=""></a>
                 </div>
                 <div class="header__top__right">
-
-                    <div class="header-account">
-                        <a href="#" data-popup="#poup-exit" class="header-account__exit"><i class="icon icon_user"></i> <span>Личный кабинет</span></a>
-                    </div>
-                    <a href="" class="header__btn">Добавить рецепт</a>
-                    <a href="" class="header__btn">Добавить мастер-класс</a>
+                    <a target="_blank" href="http://academy.oetker.ru/recipes/add/?edit=Y" class="header__btn">Добавить рецепт</a>
+                    <a target="_blank" href="http://academy.oetker.ru/mk/add/?edit=Y" class="header__btn">Добавить мастер-класс</a>
                 </div>  <!-- end header__top__right  -->
             </div>  <!-- end header__container  -->
         </div>  <!-- end header__top  -->
@@ -48,10 +44,11 @@ AppAsset::register($this);
             <div class="header__container">
                 <form name="arrFilter_form" action="" method="get" class="form header__serach">
                     <input type="hidden" name="set_filter" value="Y">
-                    <button class="btn" type="submit">Найти</button>
+                    <a target="_blank" href="http://academy.oetker.ru/recipes/?set_filter=Y&q=" class="btn">Найти</a>
                     <div class="header__serach__input">
                         <input type="text" name="q" class="form__controll" placeholder="Поиск по рецептам и ингредиентам">
                         <i class="icon icon_search"></i>
+                        <a target="_blank" href="http://academy.oetker.ru/recipes/?set_filter=Y&q=" class="link"></a>
                     </div>
                 </form>
             </div>  <!-- end header__container  -->
@@ -62,53 +59,53 @@ AppAsset::register($this);
                 <!-- ================ -->
                 <nav class="main-menu">
                     <ul>
-                        <li><a href="/recipes/">Рецепты <i class="icon icon_arrow-down15x9"></i></a>
+                        <li><a target="_blank" href="http://academy.oetker.ru/recipes/">Рецепты <i class="icon icon_arrow-down15x9"></i></a>
                             <ul>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=4">Блины, оладьи, сырники</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=5">Хлеб</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=10">Пироги, пирожки, пицца</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=15">Булочки</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=20">Запеканки</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=16">Кексы, маффины, капкейки</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=18">Куличи</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=17">Паи, тарты</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=19">Печенье, вафли, пряники</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=12">Торты и пирожные</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=13">Десерты</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=14">Домашние заготовки</a></li>
-                                <li><a href="/recipes/?arrFilter_ff[SECTION_ID][]=37">Другое</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=4">Блины, оладьи, сырники</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=5">Хлеб</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=10">Пироги, пирожки, пицца</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=15">Булочки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=20">Запеканки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=16">Кексы, маффины, капкейки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=18">Куличи</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=17">Паи, тарты</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=19">Печенье, вафли, пряники</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=12">Торты и пирожные</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=13">Десерты</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=14">Домашние заготовки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/recipes/?arrFilter_ff[SECTION_ID][]=37">Другое</a></li>
                             </ul>
                         </li>
-                        <li><a href="/mk/">Мастер-классы <i class="icon icon_arrow-down15x9"></i></a>
+                        <li><a target="_blank" href="http://academy.oetker.ru/mk/">Мастер-классы <i class="icon icon_arrow-down15x9"></i></a>
                             <ul>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=24&amp;set_filter=Y">Блины, оладьи, сырники</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=25&amp;set_filter=Y">Хлеб</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=26&amp;set_filter=Y">Пироги, пирожки, пицца</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=31&amp;set_filter=Y">Булочки</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=36&amp;set_filter=Y">Запеканки</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=32&amp;set_filter=Y">Кексы, маффины, капкейки</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=34&amp;set_filter=Y">Куличи</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=33&amp;set_filter=Y">Паи, тарты</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=35&amp;set_filter=Y">Печенье, вафли, пряники</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=28&amp;set_filter=Y">Торты и пирожные</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=29&amp;set_filter=Y">Десерты</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=30&amp;set_filter=Y">Домашние заготовки</a></li>
-                                <li><a href="/mk/?arrFilter_ff[SECTION_ID][]=38&amp;set_filter=Y">Другое</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=24&amp;set_filter=Y">Блины, оладьи, сырники</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=25&amp;set_filter=Y">Хлеб</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=26&amp;set_filter=Y">Пироги, пирожки, пицца</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=31&amp;set_filter=Y">Булочки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=36&amp;set_filter=Y">Запеканки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=32&amp;set_filter=Y">Кексы, маффины, капкейки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=34&amp;set_filter=Y">Куличи</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=33&amp;set_filter=Y">Паи, тарты</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=35&amp;set_filter=Y">Печенье, вафли, пряники</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=28&amp;set_filter=Y">Торты и пирожные</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=29&amp;set_filter=Y">Десерты</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=30&amp;set_filter=Y">Домашние заготовки</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/mk/?arrFilter_ff[SECTION_ID][]=38&amp;set_filter=Y">Другое</a></li>
                             </ul>
                         </li>
-                        <li><a href="/hitrosti/">Советы</a></li>
-                        <li><a href="/contest/">Конкурсы</a></li>
-                        <li><a href="/news/">Новости</a></li>
-                        <li><a href="/range/">Ассортимент</a></li>
-                        <li class="selected"><a href="/recipes/2724/" target="_blank">Случайный рецепт</a></li>
+                        <li><a target="_blank" href="http://academy.oetker.ru/hitrosti/">Советы</a></li>
+                        <li><a target="_blank" href="http://academy.oetker.ru/contest/">Конкурсы</a></li>
+                        <li><a target="_blank" href="http://academy.oetker.ru/news/">Новости</a></li>
+                        <li><a target="_blank" href="http://academy.oetker.ru/range/">Ассортимент</a></li>
+                        <li class="selected"><a href="http://academy.oetker.ru/recipes/2724/" target="_blank">Случайный рецепт</a></li>
                         <li>
                             <a href="#">Еще <i class="icon icon_arrow-down15x9"></i></a>
                             <ul>
-                                <li><a href="/battle-of-recipes/">Битвы рецептов</a></li>
-                                <li><a href="/rating/">Рейтинг</a></li>
-                                <li><a href="/gift-shop/">Магазин подарков</a></li>
-                                <li><a href="/qa/">Вопросы и ответы</a></li>
-                                <li><a href="/help/">Справка</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/battle-of-recipes/">Битвы рецептов</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/rating/">Рейтинг</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/gift-shop/">Магазин подарков</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/qa/">Вопросы и ответы</a></li>
+                                <li><a target="_blank" href="http://academy.oetker.ru/help/">Справка</a></li>
                             </ul>
                         </li>
                     </ul>
