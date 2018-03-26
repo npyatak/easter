@@ -259,10 +259,6 @@
         -webkit-background-size: cover;
         background-size: cover;
     }
-    .g-container {
-        width: 1300px;
-        margin: 0 auto;
-    }
     .br-block h2 {
         margin-bottom: 30px;
         font: 48px 'PT-Serif-BoldItalic', serif;
