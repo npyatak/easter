@@ -1,3 +1,18 @@
+    .custom-pagination {
+        position: relative;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        margin-top: 20px;
+    }
+    .custom-pagination li {
+        display: inline-block;
+        margin: 0 10px;
+        color: #6a98bc;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    /* /images/recepie-page/youtubepreview.png */
     .main-slider-wrapper {
         position: relative;
         background: #f2f3f0;
@@ -13,8 +28,10 @@
     .main-slider-wrapper a {
         position: relative;
         margin: 0 auto;
-        font-family: 'PT-Serif-Regular';
         display: inline-block;
+        font-size: 16px;
+        color: #6a98bc;
+        text-decoration: underline;
     }
     .main-slider-wrapper .main-slider {
         position: relative;
@@ -79,7 +96,7 @@
         line-height: 25px;
         font-size: 16px;
         margin-bottom: 30px;
-        font-family: 'PT-Serif-Regular';
+        /* font-family: 'PT-Serif-Regular'; */
     }
     .slider-nav-right {
         display: inline-block;
