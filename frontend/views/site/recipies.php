@@ -11,9 +11,9 @@ use yii\helpers\Url;
         <div class="container">
             <div class="row">
             <?php foreach ($recipiesType2 as $recipe):?>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6">
                     <div class="br-block__item">
-                        <a href="" class="image" style="background-image:url(<?=$recipe->image;?>)"></a>
+                        <a href="<?=$recipe->url;?>" class="image" style="background-image:url(<?=$recipe->image;?>)"></a>
                         <div class="text">
                             <h3><a href="<?=$recipe->url;?>"><?=$recipe->title;?></a></h3>
                             <?=$recipe->ingredient;?>
