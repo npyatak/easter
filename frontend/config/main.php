@@ -51,7 +51,7 @@ return [
             'baseUrl' => '/',
             'rules' => [                
                 '/' => 'site/index',
-                'recipe/<alias>' => 'site/recipe',
+                'recipies/<alias>' => 'site/recipe',
                 '<action:\w+>/<id:\d+>' => 'site/<action>',
                 '<action:\w+>' => 'site/<action>',
             ],

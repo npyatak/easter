@@ -69,7 +69,7 @@ use yii\helpers\Url;
                 <div class="text-center"><img class="icon" src="/images/general-page/kulich-2.png" alt="Kulich"></div>
                 <h2>Другие рецепты к пасхе</h2>
                 <div class="text-center">
-                    <a class="simple-link text-white" href="<?=Url::toRoute(['site/recepies']);?>">Смотреть все</a>
+                    <a class="simple-link text-white" href="<?=Url::toRoute(['site/recipies']);?>">Смотреть все</a>
                 </div>
                 <?php if($recipiesType2):?>
                     <div class="contest-items clearfix">
