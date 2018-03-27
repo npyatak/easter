@@ -558,3 +558,7 @@ body {
     text-align: center;
     text-align: -webkit-center;
 }
+.btn-to-main:focus {
+    color: #fff;
+    text-decoration: none;
+}

@@ -101,7 +101,7 @@ use yii\helpers\Url;
                     <?php foreach ($advices as $advice):?>
                         <div class="item">
                             <div class="flex-box">
-                                <div class="left">
+                                <div class="left custom-left">
                                     <h4><?=$advice->title;?></h4>
                                     <div class="text"><?=$advice->preview;?></div>
                                     <a class="p-btn btn-rounded btn-red" href="<?=Url::toRoute(['site/decor']);?>">Читать</a>
