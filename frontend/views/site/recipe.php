@@ -1,3 +1,6 @@
+<a href="/" class="btn-to-main">
+    На главную
+</a>
 <div class="rcp-page">
     <div class="header custom-header">
         <div class="header__text">

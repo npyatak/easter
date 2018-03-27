@@ -1,3 +1,6 @@
+<a href="/" class="btn-to-main">
+    На главную
+</a>
 <div class="general-page">
     <div class="first-block">
         <div class="">

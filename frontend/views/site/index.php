@@ -1,7 +1,6 @@
 <?php
 use yii\helpers\Url;
 ?>
-
 <div class="general-page">
     <div class="first-block">
         <div class="g-container">

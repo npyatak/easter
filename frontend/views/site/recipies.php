@@ -1,7 +1,9 @@
 <?php
 use yii\helpers\Url;
 ?>
-
+<a href="/" class="btn-to-main">
+    На главную
+</a>
 <div class="br-block">
     <div class="text-center"><img class="icon" src="/images/general-page/kulich.png" alt="Kulich"></div>
     <h2>Другие рецепты к Пасхе</h2>

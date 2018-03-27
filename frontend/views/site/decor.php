@@ -1,7 +1,9 @@
 <?php
 use yii\helpers\Url;
 ?>
-
+<a href="/" class="btn-to-main">
+    На главную
+</a>
 <div class="rcp-page decoration-page">
     <div class="header">
         <div class="header__text">
