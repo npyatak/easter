@@ -88,6 +88,7 @@
     #menu-list ul li {
         height: 46px;
         display: block;
+        background: #FFF;
     }
     #menu-list ul li a {
         padding: 15px 20px;
