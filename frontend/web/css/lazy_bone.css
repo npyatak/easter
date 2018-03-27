@@ -326,6 +326,7 @@
     .participants .action__block button {
         background-color: #FF0509 !important;
         color: #fff;
+        border: none!important;
     }
     .participants .block__title {
         color: #fff;

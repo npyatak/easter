@@ -7,8 +7,8 @@ use yii\helpers\Url;
     <h2>Другие рецепты к Пасхе</h2>
     <?php if($recipiesType2):?>
         <div class="container">
-            <?php foreach ($recipiesType2 as $recipe):?>
             <div class="row">
+            <?php foreach ($recipiesType2 as $recipe):?>
                 <div class="col-md-6 col-sm-6">
                     <div class="br-block__item">
                         <a href="" class="image" style="background-image:url(<?=$recipe->image;?>)"></a>
@@ -21,8 +21,8 @@ use yii\helpers\Url;
                         </div>
                     </div>
                 </div>
+                <?php endforeach;?>
             </div>
-            <?php endforeach;?>
         </div>
     <?php endif;?>
 </div>
