@@ -53,13 +53,7 @@ use yii\helpers\Url;
                 <div class="hash-tag">#DrOetker_Пасха</div>
                 <p>в своем аккаунте Instagram. Авторы лучших, по мнению жюри, 15 работ получат  пасхальные наборы Dr. Oetker</p>
                 <div class="actions">
-<<<<<<< HEAD
-                    <a href="/uploads/rules_03.27.pdf">
-                        Полные правила
-                    </a>
-=======
                     <a href="/uploads/rules_03.27.pdf">Полные правила</a>
->>>>>>> 81e9f90accf36aa097c3b9e9298cb0aaae7981cb
                     <a href="<?=Url::toRoute(['site/participants']);?>">Все участники</a>
                 </div>
             </div>
