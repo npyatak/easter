@@ -59,12 +59,13 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionDecor()
+    public function actionDecor($id = null)
     {
         $advices = Advice::find()->all();
 
         return $this->render('decor', [
             'advices' => $advices,
+            'id' => $id,
         ]);
     }
 

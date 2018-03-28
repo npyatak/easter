@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Url;
 ?>
+
 <a href="/" class="btn-to-main">
     На главную
 </a>
@@ -19,15 +20,15 @@ use yii\helpers\Url;
     <?php if($advices):?>
         <div class="image-wrapper image-wrapper-custom">
             <div class="slider-slick">
-                <?php foreach ($advices as $advice):?>
-                    <div>
+                <?php foreach ($advices as $key => $advice):?>
+                    <div data-key=<?=$key+1;?>>
                         <img src="<?=$advice->image;?>" alt="<?=$advice->title;?>">
                     </div>
                 <?php endforeach;?>
             </div>
             <div class="slider-slick-for">
-                <?php foreach ($advices as $advice):?>
-                    <div>
+                <?php foreach ($advices as $key => $advice):?>
+                    <div data-key=<?=$key+1;?>>
                         <div class="middle__text">
                             <h1 class="subtitle"><?=$advice->title;?></h1>
                             <p class="text"><?=$advice->text;?></p>
@@ -44,3 +45,68 @@ use yii\helpers\Url;
 
     <?=$this->render('_previews');?>
 </div>
+
+<?php $initial = $id ? $id - 1 : 0;?>
+<?php $script = "
+    $('.slider-slick').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: ".$initial.",
+        arrows: true,
+        fade: true,
+        dots: true,
+        asNavFor: '.slider-slick-for',
+        dotsClass: 'custom-pagination',
+        customPaging: function (slider, i) {
+            return (i + 1);
+        },
+        nextArrow: '<div class=\"slider-nav-right slider-nav-right-white\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>',
+        prevArrow: '<div class=\"slider-nav-left slider-nav-left-white\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
+    });
+    $('.slider-slick-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: ".$initial.",
+        arrows: false,
+        fade: false,
+        dots: false,
+        asNavFor: '.slider-slick',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+    $('.slider-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        nextId = $('.slick-slide[data-slick-index='+nextSlide+']').data('key');
+        window.history.pushState(null, '', '".Url::toRoute(['site/decor'])."/'+nextId);
+    });
+";
+
+$this->registerJs($script, yii\web\View::POS_END);
