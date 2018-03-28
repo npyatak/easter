@@ -98,13 +98,13 @@ use yii\helpers\Url;
                 <div class="text-center"><img class="icon" src="/images/general-page/kulich-3.png" alt="Kulich"></div>
                 <h2>Украшаем дом к пасхе</h2>
                 <div class="decorate">
-                    <?php foreach ($advices as $advice):?>
+                    <?php foreach ($advices as $key => $advice):?>
                         <div class="item">
                             <div class="flex-box">
                                 <div class="left custom-left">
                                     <h4><?=$advice->title;?></h4>
                                     <div class="text"><?=$advice->preview;?></div>
-                                    <a class="p-btn btn-rounded btn-red" href="<?=Url::toRoute(['site/decor']);?>">Читать</a>
+                                    <a class="p-btn btn-rounded btn-red" href="<?=Url::toRoute(['site/decor', 'id'=>$key+1]);?>">Читать</a>
                                 </div>
                                 <div class="right" style="background-image:url(<?=$advice->preview_image;?>)"></div>
                             </div>
