@@ -23,10 +23,9 @@
                 src="<?=$recipe->video;?>"
                 frameborder="0" 
                 allowfullscreen
-                width=940
-                height=600
-                >
-            </iframe>
+                width=100%
+                height=100%
+            ></iframe>
         <?php else:?>
             <img src="<?=$recipe->image;?>" alt="<?=$recipe->title;?>">
         <?php endif;?>
