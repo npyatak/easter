@@ -16,7 +16,7 @@
             </p>
         </div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper custom-image-wrapper">
         <?php if($recipe->video):?>
             <iframe id="recipe-video" 
                 class="video"

@@ -28,7 +28,7 @@ use yii\helpers\Url;
                 в своем аккаунте Instagram. Авторы лучших, по мнению жюри, <br/>
                 15 работ получат  пасхальные наборы Dr. Oetker
             </p>
-            <a href="/uploads/rules_03.27.pdf" class="link special-link">
+            <a href="/uploads/rules_03.27.pdf" target="_blank" class="link special-link">
                 Полные правила
             </a>
             <a href="<?=Url::toRoute(['site/participants']);?>" class="link">

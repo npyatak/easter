@@ -29,7 +29,7 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     arrows: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -38,7 +38,7 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
-                    dots: true
+                    dots: false
                 }
             }
         ]
