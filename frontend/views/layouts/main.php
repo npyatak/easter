@@ -1,4 +1,5 @@
 <?php
+use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
@@ -18,6 +19,17 @@ AppAsset::register($this);
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+
+    <?php
+    $this->registerMetaTag(['property' => 'og:description', 'content' => 'Проверенные рецепты пасхальных куличей'], 'og:description');
+    $this->registerMetaTag(['property' => 'og:title', 'content' => 'Идеи для Пасхи от Dr. Oetker'], 'og:title');
+    $this->registerMetaTag(['property' => 'og:url', 'content' => Url::canonical()], 'og:url');
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website'], 'og:type');
+    $this->registerMetaTag(['property' => 'og:image', 'content' => Url::to(['/images/share_easter.jpg'], $_SERVER['REQUEST_SCHEME'])], 'og:image');
+    $this->registerMetaTag(['property' => 'og:image:width', 'content' => '1200'], 'og:image:width');
+    $this->registerMetaTag(['property' => 'og:image:height', 'content' => '600'], 'og:image:height');
+    ?>
+
     <?php $this->head() ?>
 </head>
 <body>
