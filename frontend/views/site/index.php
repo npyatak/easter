@@ -1,6 +1,20 @@
 <?php
 use yii\helpers\Url;
 ?>
+<div class="menu-buttons__block">
+    <div class="social">
+        <p class="text hide-mobile">Мы в соцсетях</p>
+        <a href="https://ok.ru/dr.oetker" target="_blank">
+            <i class="fa fa-odnoklassniki"></i>
+        </a>
+        <a href="https://www.instagram.com/dr.oetker_russia/" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://vk.com/dr_oetker" target="_blank">
+            <i class="fa fa-vk"></i>
+        </a>
+    </div>
+</div>
 <div class="general-page">
     <div class="first-block">
         <div class="g-container">

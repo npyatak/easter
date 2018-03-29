@@ -1,3 +1,42 @@
+    .menu-buttons__block a {
+        display:  inline-block;
+        margin-right: 10px;
+    }
+
+    .menu-buttons__block {
+        text-align:  center;
+        text-align:  -webkit-center;
+        position: relative;
+        height: 85px;
+        max-width: 1210px;
+        min-width: 990px;
+        margin: 0 auto;
+    }
+    .menu-buttons__block .social a {
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #96c5ea;
+        width: 42px;
+        height: 40px;
+        text-align: center;
+        text-align: -webkit-center;
+    }
+    .menu-buttons__block .social {
+        width: 325px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 25px 0;
+    }
+    .menu-buttons__block .social .text {
+        color: #666259;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .menu-buttons__block .social a>i {
+        color: #96c5ea;
+        padding: 10px;
+    }
     .rcp-page {
         display: block;
         position: relative;
@@ -366,23 +405,14 @@
         line-height: 30px;
     }
 /* @media */    
-@media screen and (min-width: 1200px) {
-    .hide-desktop {
-        display: none;
-    }
-    .hide-mobile {
-        display: block;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .hide-desktop {
-        display: block;
-    }
-    .hide-mobile {
-        display: none;
-    }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .menu-buttons__block {
+        min-width: 100%;
+    }
+    .menu-buttons__block .social {
+        text-align: right;
+        text-align: -webkit-right;
+    }
     .rcp-page .header {
         background-position: right;
     }
@@ -443,6 +473,16 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .menu-buttons__block {
+        min-width: 100%;
+    }
+    .menu-buttons__block .social {
+        position: relative;
+        width: auto;
+        top: initial;
+        right: initial;
+        display: inline-block;
+    }
     .rcp-page .header {
         background-position: left;
         height: auto;
@@ -538,5 +578,21 @@
     }
     .participants {
         padding: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hide-desktop {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .hide-desktop {
+        display: block;
+    }
+    .hide-mobile {
+        display: none!important;
     }
 }
