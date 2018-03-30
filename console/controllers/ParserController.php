@@ -39,7 +39,6 @@ class ParserController extends Controller {
                         $count++;
                     }
                 }
-                break;
             }
             if(!$json->graphql->hashtag->edge_hashtag_to_media->page_info->has_next_page) break;
             $url = $baseUrl.'&max_id='.$json->graphql->hashtag->edge_hashtag_to_media->page_info->end_cursor;
