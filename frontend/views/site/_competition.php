@@ -14,18 +14,24 @@ use yii\helpers\Url;
             Конкурс!
         </h1>
         <div class="competition__text">
-            <h2 class="subtitle">
+            <h2 class="subtitle" style="margin-bottom: 15px;">
                 Академия Dr. Oetker объявляет конкурс <br/>
                 на самый красивый пасхальный кулич.  
             </h2>
-            <p class="text">
-                Готовь куличи, публикуй фотографии под хештегом 
+            <p class="text" style="margin-bottom: 5px;">
+                <strong>1.</strong> Готовь куличи 
             </p>
-            <h2 class="subtitle">
+            <p class="text" style="margin-bottom: 0px;">
+                <strong>2.</strong> Публикуй фотографии под хештегом
+            </p>
+            <h2 class="subtitle" style="margin: 15px 0;">
                 #DrOetker_Пасха
             </h2>
-            <p class="text">
-                в своем аккаунте Instagram. Авторы лучших, по мнению жюри, <br/>
+            <p class="text" style="margin-bottom: 5px;">
+                в своем аккаунте Instagram.
+            </p>
+            <p class="text" style="margin-bottom: 15px;">
+                <strong>3.</strong> Авторы лучших, по мнению жюри, <br/>
                 15 работ получат  пасхальные наборы Dr. Oetker
             </p>
             <a href="/uploads/rules_03.27.pdf" target="_blank" class="link special-link">

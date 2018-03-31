@@ -57,22 +57,8 @@ use yii\helpers\Url;
                 <?php endif;?>
             </div>
         </div>
-        <div class="bottom">
-            <div class="left"></div>
-            <div class="right"></div>
-            <div class="g-container">
-                <h2><span>Конкурс</span></h2>
-                <h3>Академия Dr. Oetker объявляет конкурс на самый красивый пасхальный кулич.</h3>
-                <p>Готовь куличи, публикуй фотографии под хештегом</p>
-                <div class="hash-tag">#DrOetker_Пасха</div>
-                <p>в своем аккаунте Instagram. Авторы лучших, по мнению жюри, 15 работ получат  пасхальные наборы Dr. Oetker</p>
-                <div class="actions">
-                    <a href="/uploads/rules_03.27.pdf" target="_blank">Полные правила</a>
-                    <a href="<?=Url::toRoute(['site/participants']);?>">Все участники</a>
-                </div>
-            </div>
-        </div>
     </div>
+    <?=$this->render('_competition');?>
 
     <?=$this->render('_products');?>
 
