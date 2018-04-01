@@ -1,20 +1,3 @@
-<div class="menu-buttons__block">
-    <a href="/" class="btn-to-main">
-        На главную
-    </a>
-    <div class="social">
-        <p class="text hide-mobile">Мы в соцсетях</p>
-        <a href="https://ok.ru/dr.oetker" target="_blank">
-            <i class="fa fa-odnoklassniki"></i>
-        </a>
-        <a href="https://www.instagram.com/dr.oetker_russia/" target="_blank">
-            <i class="fa fa-instagram"></i>
-        </a>
-        <a href="https://vk.com/dr_oetker" target="_blank">
-            <i class="fa fa-vk"></i>
-        </a>
-    </div>
-</div>
 <div class="rcp-page">
     <div class="header custom-header">
         <div class="header__text">

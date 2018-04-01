@@ -39,13 +39,13 @@ AppAsset::register($this);
         <div class="mobile-hidden">
             <div class="header__brend">
                 <div class="header__container">
-                    <div class="header__brend__icon"><img src="/frontend/web/images/logo/brend.png" alt="Logo"></div>
+                    <div class="header__brend__icon"><img src="/images/logo/brend.png" alt="Logo"></div>
                 </div>  <!-- end header__container  -->
             </div>  <!-- end header__brend  -->
             <div class="header__top">
                 <div class="header__container">
                     <div class="header__logo">
-                        <a href="/"><img src="/frontend/web/images/logo/logo.png" alt=""></a>
+                        <a href="/"><img src="/images/logo/logo.png" alt=""></a>
                     </div>
                     <div class="header__top__right">
                         <a target="_blank" href="http://academy.oetker.ru/recipes/add/?edit=Y" class="header__btn">Добавить рецепт</a>
@@ -130,14 +130,14 @@ AppAsset::register($this);
             <div class="header__brend">
                 <div class="header__container">
                     <div class="header__brend__icon">
-                        <img src="/frontend/web/images/logo/brend.png" alt="Logo">
+                        <img src="/images/logo/brend.png" alt="Logo">
                     </div>
                 </div>  <!-- end header__container  -->
             </div>  <!-- end header__brend  -->
             <div class="header__top">
                 <div class="header__container">
                     <div class="header__logo">
-                        <a href="/"><img src="/frontend/web/images/logo/logo.png" alt=""></a>
+                        <a href="/"><img src="/images/logo/logo.png" alt=""></a>
                     </div>
                     <div class="action-icon">
                         <i class="fa fa-bars"></i>
@@ -176,6 +176,24 @@ AppAsset::register($this);
         <?= Alert::widget() ?>
     </div>
     <div id="content">
+        <div class="menu-buttons__block">
+            <a href="/" class="btn-to-main">
+                На главную
+            </a>
+            <div class="social">
+                <p class="text hide-mobile">Мы в соцсетях</p>
+                <a href="https://ok.ru/dr.oetker" target="_blank" data-event="click" data-param="social-ok">
+                    <i class="fa fa-odnoklassniki"></i>
+                </a>
+                <a href="https://www.instagram.com/dr.oetker_russia/" target="_blank" data-event="click" data-param="social-ig">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://vk.com/dr_oetker" target="_blank" data-event="click" data-param="social-vk">
+                    <i class="fa fa-vk"></i>
+                </a>
+            </div>
+        </div>
+
         <?= $content ?>
     </div>
 </div>
@@ -196,6 +214,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-116429672-1');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-116429672-1', 'auto');
+    ga('send', 'pageview');
 </script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
