@@ -23,15 +23,13 @@
                 <h2>Раз в год в наши дома приходит Пасха.</h2>
                 <p>А с ней чудесные ароматы выпечки, ванили, корицы. <br>В доме по-особенному светло и хорошо!</p>
                 <div class="text-center">
-                    <span class="go-to-second-screen"><span class="fa fa-angle-down"></span></span>
+                    <span class="participants-arrow"><span class="fa fa-angle-down"></span></span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<?=$this->render('_products');?>
-
+    <?=$this->render('_products');?>
 <div class="participants">
     <h1 class="block__title">
         Участники

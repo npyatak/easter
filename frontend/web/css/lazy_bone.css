@@ -2,7 +2,19 @@
         display:  inline-block;
         margin-right: 10px;
     }
-
+    .participants-arrow {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #95C5E9;
+        color: #95C5E9;
+        cursor: pointer;
+    }
     .menu-buttons__block {
         text-align:  center;
         text-align:  -webkit-center;

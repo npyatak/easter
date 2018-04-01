@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $('.participants-arrow').click(function(){
+        $('html, body').animate({scrollTop: $('.participants').offset().top}, 400);
+    });
     $('.action-icon').children('i.fa-bars').click(function() {
         $('#menu-list').css('width', '80%');
         $('i.fa-bars').css('opacity', '0');
