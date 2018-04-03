@@ -1,3 +1,8 @@
+<?php 
+use yii\widgets\ListView;
+use kop\y2sp\ScrollPager;
+?>
+
 <div class="general-page">
     <div class="first-block">
         <div class="">
@@ -17,28 +22,26 @@
     <h1 class="block__title">
         Участники
     </h1>
-    <?php if($posts):?>
-        <div class="container">
-            <div class="row">
-                <?php foreach ($posts as $post):?>
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <div class="participants__block">
-                            <img src="<?=$post->thumbUrl;?>" alt="">
-                            <div class="text">
-                                <!-- <h2 class="name"><?=$post->ig_user_id;?></h2> -->
-                                <!-- <p class="comment">
-                                    Комментарий в две строчки примерно
-                                </p> -->
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach;?>
-            </div>
-        </div>
-    <?php endif;?>
-    <div class="action__block">
-        <button class="p-btn btn-rounded">
-            Загрузить еще
-        </button>
+    <div class="container">
+        <?= ListView::widget([
+            'dataProvider' => $dataProvider,
+            'layout' => "{items} {pager}",
+            'itemOptions' => ['class' => 'post-item col-md-3 col-sm-4 col-xs-12'],
+            'itemView' => '_post',
+            'options' => ['class' => 'row', 'id' => 'posts'],
+            'pager' => [
+                'class' => ScrollPager::className(), 
+                'triggerText' => 'Загрузить ещё',
+                'triggerTemplate' => '<div class="ias-trigger action__block"><button class="p-btn btn-rounded">{text}</button></div>',
+                'container' => '#posts',
+                'item' => '.post-item',
+                'negativeMargin' => 1000,
+                'delay' => 10,
+                'paginationSelector' => '#posts .pagination',
+                'enabledExtensions' => [
+                    ScrollPager::EXTENSION_TRIGGER,
+                ]
+            ],
+        ]);?>
     </div>
 </div>

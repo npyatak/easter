@@ -14,6 +14,7 @@ use common\models\Post;
 use common\models\Recipe;
 use common\models\Preview;
 use common\models\Advice;
+use common\models\search\PostSearch;
 /**
  * Site controller
  */
@@ -105,10 +106,21 @@ class SiteController extends Controller
 
     public function actionParticipants()
     {
-        $posts = Post::find()->where(['status' => Post::STATUS_ACTIVE])->all();
+        $searchModel = new PostSearch();
+        $params = Yii::$app->request->queryParams;
+        $params['PostSearch']['status'] = Post::STATUS_ACTIVE;
+
+        $dataProvider = $searchModel->search($params);
+        $dataProvider->sort = [
+            'defaultOrder' => ['created_at'=>SORT_DESC],
+            'attributes' => ['created_at'],
+        ];
+        $dataProvider->pagination = [
+            'pageSize' => 12,
+        ];
 
         return $this->render('participants', [
-            'posts' => $posts,
+            'dataProvider' => $dataProvider,
         ]);
     }
 
