@@ -18,7 +18,7 @@
         background: #f2f3f0;
         width: 100%;
         display: flex;
-        padding: 120px;
+        padding: 80px 120px 120px 120px;
         text-align: center;
         text-align: -webkit-center;
         flex-direction: column;
@@ -58,12 +58,14 @@
         background: #f2f3f0;
         padding: 0 100px;
         z-index: 2;
-        position: absolute;
-        top: 70px;
+        position: relative;
+        margin-top: 0;
+        top: 50px;
     }
     .main-slider .main-slider__card img {
         width: 180px;
         height: 270px;
+        margin: 0 auto;
     }
     .main-slider__card {
         position: relative;
@@ -71,7 +73,7 @@
         width: 180px;
     }
     .main-slider__card button {
-        display: inline-block;
+        display: block;
         outline: none;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -85,6 +87,7 @@
         height: 35px;
         line-height: 35px;
         width: 90px;
+        margin: 0 auto;
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -95,8 +98,8 @@
         text-align: -webkit-center;
         line-height: 25px;
         font-size: 16px;
+        margin: 0 auto;
         margin-bottom: 30px;
-        /* font-family: 'PT-Serif-Regular'; */
     }
     .slider-nav-right {
         display: inline-block;
@@ -174,6 +177,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     .competition__wrapper .title {
         text-align: -webkit-center;
@@ -181,10 +185,10 @@
         font-family: 'PT-Serif-BoldItalic';
         font-style: italic;
         font-weight: 400;
-        margin-bottom: 30px;
+        margin-bottom: -20px;
         color: #fff;
-        position: absolute;
-        top: -45px;
+        position: relative;
+        top: -75px;
         background: #ccdc95;
         padding: 0 100px;
     }
@@ -448,12 +452,15 @@
         margin: 0;
     }
     .competition {
-        padding: 80px;
+        padding: 80px 80px 50px 80px;
         height: 500px;
     }
     .competition__text .subtitle {
         margin: 0 0 10px 0;
         font-size:  28px;
+    }
+    .competition__text {
+        width: 100%;
     }
     .competition__text .text {
         font-size:  14px;
@@ -462,6 +469,7 @@
     .competition__wrapper .title {
         font-size: 36px;
         padding: 0 20px;
+        top: -65px;
     }
     .competition img {
         width: 150px;
@@ -546,6 +554,7 @@
     }
     .competition__text {
         padding: 20px 5px;
+        width: 100%;
     }
     .competition__text .subtitle {
         margin: 0 0 10px 0;
