@@ -30,7 +30,7 @@ class Preview extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'link'], 'required'],
-            [['show_on_main'], 'integer'],
+            [['show_on_main', 'order'], 'integer'],
             [['title', 'image', 'link'], 'string', 'max' => 255],
         ];
     }
@@ -46,6 +46,7 @@ class Preview extends \yii\db\ActiveRecord
             'image' => 'Изображение',
             'link' => 'Ссылка',
             'show_on_main' => 'Показать на главной',
+            'order' => 'Порядок',
         ];
     }
 }

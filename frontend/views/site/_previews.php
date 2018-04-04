@@ -6,7 +6,9 @@ use yii\helpers\Url;
     <div class="top__part">
         <img class="cupcake-icon" src="/images/icons/cupcake.png" alt="">
         <h1 class="title">Другие рецепты куличей</h1>
-        <a href="<?=Url::toRoute(['site/recipies']);?>" class="link">Смортеть все</a>
+        <?php if(!in_array(Yii::$app->controller->action->id, ['recipies', 'eastercake'])):?>
+            <a href="<?=Url::toRoute(['site/recipies']);?>" class="link">Смортеть все</a>
+        <?php endif;?>
     </div>
     <?php if($this->params['previews']):?>
     <div class="cards-wrapper">

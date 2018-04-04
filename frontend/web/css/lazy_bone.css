@@ -610,3 +610,8 @@
         display: none!important;
     }
 }
+
+.all-recipies {
+    text-align: center;
+    margin-top: 50px;
+}

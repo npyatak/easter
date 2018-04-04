@@ -177,9 +177,11 @@ AppAsset::register($this);
     </div>
     <div id="content">
         <div class="menu-buttons__block">
-            <a href="/" class="btn-to-main">
-                На главную
-            </a>
+            <?php if(Yii::$app->controller->action->id != 'index'):?>
+                <a href="/" class="btn-to-main">
+                    На главную
+                </a>
+            <?php endif;?>
             <div class="social">
                 <p class="text hide-mobile">Мы в соцсетях</p>
                 <a href="https://ok.ru/dr.oetker" target="_blank" data-event="click" data-param="social-ok">

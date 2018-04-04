@@ -8,6 +8,7 @@ use yii\web\NotFoundHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\db\Expression;
 
 use common\models\Product;
 use common\models\Post;
@@ -34,7 +35,7 @@ class SiteController extends Controller
 
     public function beforeAction($action) {
         $products = Product::find()->all();
-        $previews = Preview::find()->all();
+        $previews = Preview::find()->orderBy([new Expression('`order` IS NULL ASC, `order` ASC')])->all();
         $this->view->params['products'] = $products;
         $this->view->params['previews'] = $previews;
 

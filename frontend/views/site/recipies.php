@@ -25,6 +25,10 @@ use yii\helpers\Url;
             </div>
         </div>
     <?php endif;?>
+
+    <div class="all-recipies">
+        <a href="http://easter2018.ru/eastercake" class="link">Смотреть рецепты пасхальных куличей</a>
+    </div>
 </div>
 <div class="br-block other-recipies">
     <?=$this->render('_previews');?>

@@ -47,6 +47,9 @@ class RecipeSearch extends Recipe
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [Expression('order ASC NULLS LAST'), 'id' => SORT_DESC],
+            ]
         ]);
 
         $this->load($params);

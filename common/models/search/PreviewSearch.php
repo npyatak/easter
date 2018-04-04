@@ -18,7 +18,7 @@ class PreviewSearch extends Preview
     public function rules()
     {
         return [
-            [['id', 'show_on_main'], 'integer'],
+            [['id', 'show_on_main', 'order'], 'integer'],
             [['title'], 'safe'],
         ];
     }
@@ -61,6 +61,7 @@ class PreviewSearch extends Preview
         $query->andFilterWhere([
             'id' => $this->id,
             'show_on_main' => $this->show_on_main,
+            'order' => $this->order,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title]);

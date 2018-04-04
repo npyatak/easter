@@ -10,11 +10,14 @@ use common\components\ElfinderInput;
     <?php $params = Yii::$app->params['defaultShare'];?>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <?= $form->field($model, 'title')->textInput() ?>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <?= $form->field($model, 'show_on_main')->checkbox();?>
+        </div>
+        <div class="col-sm-2">
+            <?= $form->field($model, 'order')->textInput();?>
         </div>
     </div>
 
