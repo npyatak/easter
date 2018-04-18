@@ -32,7 +32,8 @@ use yii\helpers\Url;
             </p>
             <p class="text" style="margin-bottom: 15px;">
                 <strong>3.</strong> Авторы лучших, по мнению жюри, <br/>
-                15 работ получат  пасхальные наборы Dr. Oetker
+                15 работ получат пасхальные наборы Dr. Oetker. <br/>
+                <strong>Победители будут объявлены 25 апреля</strong> 
             </p>
             <a href="/uploads/rules_03.27.pdf" target="_blank" class="link special-link">
                 Полные правила
