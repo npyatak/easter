@@ -158,12 +158,12 @@
     }
 /* competition-block */
     .competition {
-        height: 700px;
+        height: auto;
         background: #ccdc95;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 120px;
+        padding: 120px 50px 50px 50px;
         position: relative;
     }
     .competition__wrapper {
@@ -188,7 +188,7 @@
         margin-bottom: -20px;
         color: #fff;
         position: relative;
-        top: -75px;
+        top: -100px;
         background: #ccdc95;
         padding: 0 100px;
     }
@@ -198,7 +198,7 @@
     }
     .competition__text {
         position: relative;
-        width: 700px;
+        width: auto;
         text-align: center;
         text-align: -webkit-center;
         margin: 0 auto;
@@ -220,10 +220,32 @@
         margin-bottom: 30px;
         font-family: 'PT-Serif-Regular';
     }
+    .competition__text ul {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: left;
+        text-align: -webkit-left;
+    }
+    .competition__text ul li {
+        padding: 10px 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .competition__text ul li a {
+        color: #1a1a1a;
+        transition: all ease-in .2s;
+    }
+    .competition__text ul li a:hover {
+        color: #209d00;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all ease-in .2s;
+    }
     .competition img {
         position: absolute;
         z-index: 2;
         width: 250px;
+        display: none;
     }
     .competition .left-1 {
         top: 0;
@@ -453,7 +475,7 @@
     }
     .competition {
         padding: 80px 80px 50px 80px;
-        height: 500px;
+        height: auto;
     }
     .competition__text .subtitle {
         margin: 0 0 10px 0;
@@ -559,6 +581,13 @@
     .competition__text .subtitle {
         margin: 0 0 10px 0;
         font-size:  25px;
+    }
+    .competition__text ul li::after {
+        content: '...';
+        color: #000;
+        position: absolute;
+        right: -10px;
+        top: 10px;
     }
     .competition__text .text {
         font-size:  14px;
