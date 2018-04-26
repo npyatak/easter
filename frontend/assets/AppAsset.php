@@ -18,8 +18,8 @@ class AppAsset extends AssetBundle
         'css/slick.css',
         'css/slick-theme.css',
         'css/main.css',
-        'css/lazy_bone.css?v=030418',
-        'css/slider-styles.css?v=250418',
+        'css/lazy_bone.css?v=260418',
+        'css/slider-styles.css?v=260418',
         'css/menu.css',
         'css/responsive-menu.css?v=020418',
     ];

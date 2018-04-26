@@ -163,7 +163,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 120px 50px 50px 50px;
+        padding: 50px;
         position: relative;
     }
     .competition__wrapper {
@@ -174,10 +174,8 @@
         margin: 0 auto;
         border: 2px solid #aebc7f;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        display: block;
+        padding: 0 20px;
     }
     .competition__wrapper .title {
         text-align: -webkit-center;
@@ -185,12 +183,13 @@
         font-family: 'PT-Serif-BoldItalic';
         font-style: italic;
         font-weight: 400;
-        margin-bottom: -20px;
+        margin-bottom: -30px;
         color: #fff;
         position: relative;
-        top: -100px;
+        top: -45px;
         background: #ccdc95;
-        padding: 0 100px;
+        padding: 0;
+        width: 45%;
     }
     .link {
         padding: 0 0 1px 0;
@@ -223,8 +222,9 @@
     .competition__text ul {
         list-style-type: none;
         padding-left: 0;
-        text-align: left;
-        text-align: -webkit-left;
+        text-align: center;
+        text-align: -webkit-center;
+        width: 200px;
     }
     .competition__text ul li {
         padding: 10px 0;
@@ -457,6 +457,9 @@
     }
 /* @media */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .competition__text ul {
+        width: auto;
+    }
     .main-slider-wrapper {
         padding: 20px 0 40px 0;
     }
@@ -474,7 +477,7 @@
         margin: 0;
     }
     .competition {
-        padding: 80px 80px 50px 80px;
+        padding: 50px;
         height: auto;
     }
     .competition__text .subtitle {
@@ -490,8 +493,9 @@
     }
     .competition__wrapper .title {
         font-size: 36px;
-        padding: 0 20px;
-        top: -65px;
+        padding: 0;
+        top: -45px;
+        width: 65%;
     }
     .competition img {
         width: 150px;
@@ -555,6 +559,11 @@
     
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .competition__text ul {
+        width: auto;
+        text-align: -webkit-left;
+        text-align: left;
+    }
     .main-slider-wrapper {
         padding: 20px 0 40px 0;
     }
@@ -582,21 +591,16 @@
         margin: 0 0 10px 0;
         font-size:  25px;
     }
-    .competition__text ul li::after {
-        content: '...';
-        color: #000;
-        position: absolute;
-        right: -10px;
-        top: 10px;
-    }
     .competition__text .text {
         font-size:  14px;
         line-height: 20px;
     }
     .competition__wrapper .title {
-        font-size: 30px;
-        padding: 0 20px;
-        top: -40px;
+        font-size: 25px;
+        padding: 0;
+        top: -35px;
+        width: 100%;
+        margin-bottom: -35px;
     }
     .competition img {
         display: none;
